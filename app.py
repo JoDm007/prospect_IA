@@ -702,7 +702,7 @@ if page == "dashboard":
     with col_r:
         st.markdown(f'<div class="section-title">{ic("activity",17,"#1B4332")} Impact mesure</div>', unsafe_allow_html=True)
         st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
-        st.markdown('<div class="impact-card" style="background:linear-gradient(135deg,#4A5568,#718096);margin-bottom:8px;"><div class="impact-value">4 h/jour</div><div class="impact-label">Avant CibleNet</div></div>', unsafe_allow_html=True)
+        st.markdown('<div class="impact-card" style="background:linear-gradient(135deg,#4A5568,#718096);margin-bottom:8px;"><div class="impact-value">Plusieurs heures/jour</div><div class="impact-label">Avant CibleNet</div></div>', unsafe_allow_html=True)
         st.markdown('<div class="impact-card" style="margin-bottom:8px;"><div class="impact-value">15 min/jour</div><div class="impact-label">Avec CibleNet</div></div>', unsafe_allow_html=True)
         st.markdown('<div class="impact-card" style="background:linear-gradient(135deg,#92400E,#D97706);"><div class="impact-value">94 %</div><div class="impact-label">Gain productivite</div></div>', unsafe_allow_html=True)
 
