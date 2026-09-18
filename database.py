@@ -1,4 +1,4 @@
-# database.py — Gestion SQLite pour Yas Prospect Copilot
+# database.py — Gestion SQLite pour CibleNet
 # Fournit toutes les opérations CRUD sur la table entreprises
 
 import sqlite3

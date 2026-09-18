@@ -1,4 +1,4 @@
-# Script de démo — Yas Prospect Copilot
+# Script de démo — CibleNet
 **Durée totale : 5 minutes** | **Répéter 3 fois minimum avant la présentation**
 
 ---
@@ -20,8 +20,8 @@
 > **[Regarder le jury, sourire, lancer sans hésiter]**
 
 **Dire :**
-> « Un commercial Yas Business perd aujourd'hui **4 heures par jour** à chercher manuellement des prospects, qualifier leur potentiel, rédiger des emails, suivre les relances.
-> En 4 jours, zéro budget, avec une équipe de 5 personnes — voici notre réponse : **Yas Prospect Copilot**. »
+> « Un commercial Opticom Business perd aujourd'hui **4 heures par jour** à chercher manuellement des prospects, qualifier leur potentiel, rédiger des emails, suivre les relances.
+> En 4 jours, zéro budget, avec une équipe de 5 personnes — voici notre réponse : **CibleNet**. »
 
 **Montrer :** le bandeau des 4 métriques en haut de l'interface
 > « 12 prospects traités, 8 haute priorité, 1 déjà converti, taux de conversion 8 %. »
@@ -123,7 +123,7 @@
 **[Revenir sur le bandeau des métriques :]**
 
 **Dire :**
-> « Bilan : **12 prospects traités**. Avant ce projet : **4 heures par jour**. Avec Yas Prospect Copilot : **15 minutes**. Gain : **94%**. »
+> « Bilan : **12 prospects traités**. Avant ce projet : **4 heures par jour**. Avec CibleNet : **15 minutes**. Gain : **94%**. »
 
 > « Chaque décision est explicable, chaque action est traçable, et l'architecture est conçue pour passer à **1 000 prospects** sans changer une ligne de code applicatif. »
 

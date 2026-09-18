@@ -71,7 +71,7 @@ def _call_with_fallback(prompt: str) -> tuple[str, bool]:
 
 # ── Prompt de premier contact ─────────────────────────────────────────────────
 
-PROMPT_PREMIER_CONTACT = """Tu es commercial chez Yas Togo, division Yas Business.
+PROMPT_PREMIER_CONTACT = """Tu es commercial chez Opticom Togo, division Opticom Business.
 Rédige un email de prospection court en français à destination de :
 
 Entreprise : {nom}
@@ -82,7 +82,7 @@ Signal de croissance : {signal_croissance}
 
 Raisons du score ICP : {score_reasons}
 
-Présente l'offre Yas Business (Fibre Pro, Flotte mobile, API SMS).
+Présente l'offre Opticom Business (Fibre Pro, Flotte mobile, API SMS).
 Personnalise en citant UNE raison du score.
 Maximum 100 mots. Ton professionnel et direct.
 Termine par une proposition de rendez-vous.
@@ -90,7 +90,7 @@ Réponds uniquement avec le corps de l'email, sans objet ni signature."""
 
 # ── Prompt de relance J+3 ─────────────────────────────────────────────────────
 
-PROMPT_RELANCE = """Tu es commercial chez Yas Togo, division Yas Business.
+PROMPT_RELANCE = """Tu es commercial chez Opticom Togo, division Opticom Business.
 Tu relances un prospect qui n'a pas répondu à ton premier contact il y a 3 jours.
 
 Entreprise : {nom}
@@ -185,7 +185,7 @@ def get_message_simule(entreprise: dict, type_message: str = "premier_contact") 
 
     # Fallback générique si rien trouvé
     return (
-        f"Bonjour, nous souhaiterions vous présenter les offres Yas Business "
+        f"Bonjour, nous souhaiterions vous présenter les offres Opticom Business "
         f"(Fibre Pro, Flotte mobile, API SMS) adaptées à {entreprise.get('nom', 'votre entreprise')}. "
         f"Seriez-vous disponible pour un échange de 20 minutes cette semaine ?"
     )
@@ -194,7 +194,7 @@ def get_message_simule(entreprise: dict, type_message: str = "premier_contact") 
 # ── CLI de test ───────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     print("=" * 60)
-    print("  TEST llm.py — Yas Prospect Copilot")
+    print("  TEST llm.py — CibleNet (Opticom Business)")
     print("=" * 60)
 
     if not groq_disponible():

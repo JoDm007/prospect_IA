@@ -51,12 +51,12 @@ def envoyer_handoff(entreprise: dict) -> tuple[bool, str]:
     message_court = message[:300] + "..." if len(message) > 300 else message
 
     payload = {
-        "username": "Yas Prospect Copilot",
+        "username": "CibleNet",
         "avatar_url": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
         "embeds": [
             {
                 "title": f"✅ Prospect converti : {nom}",
-                "description": "Transmis au responsable commercial Yas Business",
+                "description": "Transmis au responsable commercial Opticom Business",
                 "color": 3066993,  # vert Discord
                 "fields": [
                     {"name": "Secteur",      "value": secteur,         "inline": True},
@@ -65,7 +65,7 @@ def envoyer_handoff(entreprise: dict) -> tuple[bool, str]:
                     {"name": "Score ICP",    "value": f"{score}/100",   "inline": True},
                     {"name": "Message envoyé", "value": message_court or "—", "inline": False},
                 ],
-                "footer": {"text": "Yas Business · Yas Prospect Copilot"},
+                "footer": {"text": "Opticom Business · CibleNet"},
             }
         ],
     }
@@ -78,7 +78,7 @@ def envoyer_handoff(entreprise: dict) -> tuple[bool, str]:
             data    = data,
             headers = {
                 "Content-Type": "application/json",
-                "User-Agent":   "YasProspectCopilot/1.0",
+                "User-Agent":   "CibleNet/1.0",
             },
             method  = "POST",
         )
@@ -107,7 +107,7 @@ def envoyer_handoff(entreprise: dict) -> tuple[bool, str]:
 # ── CLI de test ───────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     print("=" * 55)
-    print("  TEST webhook.py — Yas Prospect Copilot")
+    print("  TEST webhook.py — CibleNet (Opticom Business)")
     print("=" * 55)
 
     test = {
@@ -117,7 +117,7 @@ if __name__ == "__main__":
         "effectif":       150,
         "localisation":   "Lomé",
         "score":          100,
-        "message_genere": "Bonjour, l'ouverture de votre agence à Agoè confirme la dynamique d'Ecobank Togo. Yas Business peut sécuriser cette expansion avec Fibre Pro, flotte mobile et API SMS. Seriez-vous disponible cette semaine ?",
+        "message_genere": "Bonjour, l'ouverture de votre agence à Agoè confirme la dynamique d'Ecobank Togo. Opticom Business peut sécuriser cette expansion avec Fibre Pro, flotte mobile et API SMS. Seriez-vous disponible cette semaine ?",
     }
 
     if not DISCORD_WEBHOOK_URL:

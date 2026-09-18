@@ -1,6 +1,6 @@
-# Jeux de données de simulation — Yas Prospect Copilot
+# Jeux de données de simulation — CibleNet
 
-Ces fichiers contiennent des **données fictives de démonstration** : ils ne décrivent pas des données commerciales vérifiées, des coordonnées de personnes ou des décisions réelles de Yas Togo.
+Ces fichiers contiennent des **données fictives de démonstration** : ils ne décrivent pas des données commerciales vérifiées, des coordonnées de personnes ou des décisions réelles d'Opticom Togo.
 
 | Fichier | Usage |
 | --- | --- |

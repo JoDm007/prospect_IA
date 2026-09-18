@@ -1,6 +1,6 @@
-# Yas Prospect Copilot
+# CibleNet
 
-Copilote commercial pour Yas Business / Yas Togo.  
+Copilote commercial pour Opticom Business / Opticom Togo.  
 Identifie, qualifie et aide à convertir les meilleures PME togolaises — zéro budget, 100 % Python.
 
 ## Stack

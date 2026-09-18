@@ -1,10 +1,10 @@
-# CAHIER DES CHARGES FINAL — Projet "Yas Prospect Copilot"
+# CAHIER DES CHARGES FINAL — Projet "CibleNet"
 
 **Version fusionnée : Streamlit (base) + Google Sheets + Webhook Discord + Vidéo secours**
 
 ---
 
-**Projet** : Identifier, qualifier et convertir automatiquement les meilleurs prospects B2B pour Yas Togo / Mixx by Yas
+**Projet** : Identifier, qualifier et convertir automatiquement les meilleurs prospects B2B pour Opticom Togo / Mixx by Opticom
 
 **Équipe** : 5 personnes
 
@@ -22,7 +22,7 @@
 
 ### 1.1 Contexte
 
-Yas Togo est l'opérateur télécom n°1 au Togo, avec la marque de paiement mobile **Mixx by Yas**. Sa division **Yas Business** cible les PME togolaises pour vendre :
+Opticom Togo est l'opérateur télécom n°1 au Togo, avec la marque de paiement mobile **Mixx by Opticom**. Sa division **Opticom Business** cible les PME togolaises pour vendre :
 
 - **Fibre Pro** : internet très haut débit pour entreprises
 - **Flotte mobile** : forfaits SIM groupés pour équipes
@@ -31,7 +31,7 @@ Yas Togo est l'opérateur télécom n°1 au Togo, avec la marque de paiement mob
 
 ### 1.2 Problème
 
-Aujourd'hui, les commerciaux de Yas Business font face à :
+Aujourd'hui, les commerciaux de Opticom Business font face à :
 
 - **4 heures par jour** perdues à chercher manuellement des prospects
 - Des **données dispersées** dans plusieurs fichiers et outils non centralisés
@@ -41,7 +41,7 @@ Aujourd'hui, les commerciaux de Yas Business font face à :
 
 ### 1.3 Question centrale
 
-> Comment permettre à une équipe commerciale Yas Business d'identifier automatiquement les PME togolaises les plus pertinentes, de les qualifier objectivement, de lancer et suivre la prospection jusqu'à la conversion — le tout dans un seul outil simple, gratuit et explicable ?
+> Comment permettre à une équipe commerciale Opticom Business d'identifier automatiquement les PME togolaises les plus pertinentes, de les qualifier objectivement, de lancer et suivre la prospection jusqu'à la conversion — le tout dans un seul outil simple, gratuit et explicable ?
 
 ## 2. OBJECTIFS DU PROJET
 
@@ -69,7 +69,7 @@ Identifier → Qualifier → Prospecter → Relancer → Convertir / Classer
 
 ### 3.1 Dans le périmètre (IN)
 
-- Moteur de scoring ICP Yas Business (Python pur)
+- Moteur de scoring ICP Opticom Business (Python pur)
 - Interface Streamlit de démonstration (3 onglets)
 - Génération de messages en français via Groq (Llama 3.3)
 - Pipeline de statuts (Nouveau → Converti)
@@ -81,11 +81,11 @@ Identifier → Qualifier → Prospecter → Relancer → Convertir / Classer
 
 ### 3.2 Hors périmètre (OUT)
 
-- Connexion réelle au CRM de Yas Togo
+- Connexion réelle au CRM de Opticom Togo
 - Envoi réel d'emails ou SMS
 - Authentification utilisateurs
 - Application mobile
-- Intégration API officielle Yas/Mixx
+- Intégration API officielle Opticom/Mixx
 - Déploiement en production
 - Scraping massif de données
 
@@ -93,9 +93,9 @@ Identifier → Qualifier → Prospecter → Relancer → Convertir / Classer
 
 | Utilisateur                 | Besoin principal                      | Usage de l'outil                         |
 | --------------------------- | ------------------------------------- | ---------------------------------------- |
-| **Commercial Yas Business** | Trouver rapidement les bons prospects | Recherche + scoring + génération message |
+| **Commercial Opticom Business** | Trouver rapidement les bons prospects | Recherche + scoring + génération message |
 | **Responsable commercial**  | Suivre l'activité de l'équipe         | Vue pipeline + statuts                   |
-| **Dirigeant Yas**           | Mesurer l'impact                      | Rapport gain de temps                    |
+| **Dirigeant Opticom**           | Mesurer l'impact                      | Rapport gain de temps                    |
 | **Business developer**      | Alimenter le pipeline                 | Import de nouvelles entreprises          |
 
 ## 5. ARCHITECTURE TECHNIQUE
@@ -181,7 +181,7 @@ Telecom-prospect-IA/
 
 ### 6.1 Module 1 — IDENTIFIER
 
-**Description** : Rechercher des entreprises togolaises correspondant à l'ICP Yas Business.
+**Description** : Rechercher des entreprises togolaises correspondant à l'ICP Opticom Business.
 
 **Entrées** :
 
@@ -206,7 +206,7 @@ Telecom-prospect-IA/
 | Secteur                             | Points | Justification                   |
 | ----------------------------------- | ------ | ------------------------------- |
 | Banque, Assurance                   | 30     | Haute valeur, besoins Fibre Pro |
-| Logistique, Éducation, Informatique | 25     | Cible cœur Yas Business         |
+| Logistique, Éducation, Informatique | 25     | Cible cœur Opticom Business         |
 | Commerce, Industrie                 | 15     | Potentiel moyen                 |
 | Agroalimentaire, autres             | 5      | Hors cible prioritaire          |
 
@@ -262,7 +262,7 @@ Score : 90/100
 **Prompt exact** :
 
 ```
-Tu es commercial chez Yas Togo, division Yas Business.
+Tu es commercial chez Opticom Togo, division Opticom Business.
 Rédige un email de prospection court en français à destination de :
 
 Entreprise : {nom}
@@ -273,7 +273,7 @@ Signal de croissance : {signal_croissance}
 
 Raisons du score ICP : {score_reasons}
 
-Présente l'offre Yas Business (Fibre Pro, Flotte mobile, API SMS).
+Présente l'offre Opticom Business (Fibre Pro, Flotte mobile, API SMS).
 Personnalise en citant UNE raison du score.
 Maximum 100 mots. Ton professionnel et direct.
 Termine par une proposition de rendez-vous.
@@ -316,7 +316,7 @@ Nouveau → Scoré → Contacté → Relancé → Converti
 
 ```
 ✅ Prospect converti : {nom}
-Transmis au responsable commercial Yas Business
+Transmis au responsable commercial Opticom Business
 Secteur : {secteur} | Effectif : {effectif} | Ville : {localisation}
 Score ICP : {score}/100
 Message généré : {message_genere}
@@ -440,7 +440,7 @@ Message généré : {message_genere}
 ## 11. CODE PYTHON DU SCORING
 
 ```python
-# scoring.py — Moteur de scoring ICP Yas Business
+# scoring.py — Moteur de scoring ICP Opticom Business
 # Python pur, compatible Pyodide et natif
 
 def score_prospect(company):
@@ -517,7 +517,7 @@ def score_prospect(company):
 
 ### Ouverture (30 secondes)
 
-> "Une PME togolaise perd 4 heures par jour à chercher manuellement des prospects. Yas Business a besoin d'automatiser ce processus. Voici notre copilote, construit en 4 jours, zéro budget."
+> "Une PME togolaise perd 4 heures par jour à chercher manuellement des prospects. Opticom Business a besoin d'automatiser ce processus. Voici notre copilote, construit en 4 jours, zéro budget."
 
 ### Étape 1 — Identifier (1 minute)
 
@@ -548,7 +548,7 @@ def score_prospect(company):
 - Simuler J+3 : montrer le statut "Relancé" avec message de relance
 - Cliquer "Converti"
 - **Notification Discord apparaît en direct** sur l'écran
-- Montrer le message de handoff : "Transmis au responsable commercial Yas Business"
+- Montrer le message de handoff : "Transmis au responsable commercial Opticom Business"
 
 ### Clôture (30 secondes)
 

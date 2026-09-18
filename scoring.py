@@ -1,4 +1,4 @@
-# scoring.py — Moteur de scoring ICP Yas Business
+# scoring.py — Moteur de scoring ICP Opticom Business
 # Python pur — aucune dépendance externe
 
 def score_prospect(company: dict) -> tuple[int, str, str]:
@@ -115,7 +115,7 @@ if __name__ == "__main__":
     ]
 
     print("=" * 65)
-    print("  SCORING ICP — Yas Business Prospect Copilot")
+    print("  SCORING ICP — CibleNet (Opticom Business)")
     print("=" * 65)
 
     all_passed = True
