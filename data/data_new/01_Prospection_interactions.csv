@@ -1,0 +1,251 @@
+﻿interaction_id,prospect_id,date,canal,action,resultat,commentaire
+I001,P014,2026-08-12,Téléphone,Relance 2,Demande d'information,Numéro injoignable
+I002,P019,2026-07-20,LinkedIn,Relance 1,Promesse de réponse,À revoir en début d'année prochaine
+I003,P031,2026-06-17,Email,Réunion,À rappeler,Numéro injoignable
+I004,P143,2026-07-17,Téléphone,Message LinkedIn,Demande d'information,À revoir en début d'année prochaine
+I005,P103,2026-08-04,Email,Email initial,Sans réponse,Intéressé par l'offre
+I006,P086,2026-09-11,LinkedIn,Démonstration,Réponse positive,À revoir en début d'année prochaine
+I007,P132,2026-06-18,WhatsApp,Relance 2,Réponse positive,Demande une proposition
+I008,P077,2026-08-15,WhatsApp,Démonstration,Rendez-vous fixé,À revoir en début d'année prochaine
+I009,P077,2026-07-31,Email,Relance 2,À rappeler,
+I010,P029,2026-07-24,WhatsApp,Email initial,Demande d'information,Demande une proposition
+I011,P068,2026-08-23,Téléphone,Email initial,Demande d'information,Demande une proposition
+I012,P044,2026-08-07,LinkedIn,WhatsApp,Promesse de réponse,
+I013,P063,2026-06-05,Email,Message LinkedIn,Sans réponse,Demande une proposition
+I014,P081,2026-07-24,Téléphone,Réunion,Rendez-vous fixé,Intéressé par l'offre
+I015,P106,2026-08-04,LinkedIn,Email initial,Rendez-vous fixé,Intéressé par l'offre
+I016,P133,2026-06-27,WhatsApp,Démonstration,Demande d'information,Demande une proposition
+I017,P081,2026-06-23,LinkedIn,Relance 2,Demande d'information,Numéro injoignable
+I018,P068,2026-08-18,LinkedIn,Message LinkedIn,Réponse positive,Numéro injoignable
+I019,P143,2026-07-09,Téléphone,Relance 1,Promesse de réponse,Numéro injoignable
+I020,P054,2026-08-28,LinkedIn,Relance 2,Pas intéressé,Numéro injoignable
+I021,P144,2026-09-10,WhatsApp,Relance 1,Sans réponse,À revoir en début d'année prochaine
+I022,P140,2026-07-19,LinkedIn,Relance 2,Promesse de réponse,Intéressé par l'offre
+I023,P075,2026-06-06,WhatsApp,Appel,À rappeler,Demande une proposition
+I024,P066,2026-09-04,LinkedIn,Message LinkedIn,Réponse positive,À revoir en début d'année prochaine
+I025,P070,2026-08-11,WhatsApp,WhatsApp,Sans réponse,À revoir en début d'année prochaine
+I026,P013,2026-07-01,Téléphone,Email initial,Rendez-vous fixé,À revoir en début d'année prochaine
+I027,P058,2026-08-21,Téléphone,Email initial,Sans réponse,Demande une proposition
+I028,P085,2026-08-31,LinkedIn,Appel,Rendez-vous fixé,Intéressé par l'offre
+I029,P002,2026-08-10,Téléphone,Réunion,Rendez-vous fixé,Demande une proposition
+I030,P123,2026-08-23,Téléphone,Relance 1,À rappeler,Numéro injoignable
+I031,P016,2026-09-07,Email,Message LinkedIn,Demande d'information,
+I032,P010,2026-06-23,LinkedIn,WhatsApp,Sans réponse,Demande une proposition
+I033,P127,2026-06-24,WhatsApp,Email initial,Sans réponse,Numéro injoignable
+I034,P146,2026-08-17,Email,Relance 2,À rappeler,Demande une proposition
+I035,P140,2026-08-07,LinkedIn,WhatsApp,Promesse de réponse,À revoir en début d'année prochaine
+I036,P120,2026-07-05,Téléphone,Appel,À rappeler,Intéressé par l'offre
+I037,P118,2026-08-22,WhatsApp,WhatsApp,Sans réponse,
+I038,P087,2026-09-10,WhatsApp,Message LinkedIn,Réponse positive,À revoir en début d'année prochaine
+I039,P104,2026-07-25,WhatsApp,Appel,Pas intéressé,
+I040,P025,2026-06-24,Téléphone,Démonstration,À rappeler,Intéressé par l'offre
+I041,P002,2026-07-04,LinkedIn,Message LinkedIn,Pas intéressé,Numéro injoignable
+I042,P085,2026-07-09,Email,Relance 1,Rendez-vous fixé,Numéro injoignable
+I043,P061,2026-06-08,Email,Démonstration,À rappeler,Intéressé par l'offre
+I044,P104,2026-08-27,WhatsApp,Appel,Rendez-vous fixé,Numéro injoignable
+I045,P095,2026-08-18,Téléphone,Message LinkedIn,Réponse positive,Demande une proposition
+I046,P040,2026-07-29,WhatsApp,Réunion,Rendez-vous fixé,À revoir en début d'année prochaine
+I047,P121,2026-09-05,Téléphone,Message LinkedIn,Rendez-vous fixé,À revoir en début d'année prochaine
+I048,P021,2026-08-07,LinkedIn,Relance 2,Sans réponse,À revoir en début d'année prochaine
+I049,P029,2026-06-08,Téléphone,WhatsApp,Réponse positive,Numéro injoignable
+I050,P134,2026-07-27,Email,Message LinkedIn,Rendez-vous fixé,À revoir en début d'année prochaine
+I051,P126,2026-06-12,LinkedIn,Email initial,Pas intéressé,Intéressé par l'offre
+I052,P132,2026-07-24,LinkedIn,Email initial,Demande d'information,Demande une proposition
+I053,P079,2026-09-01,Email,Réunion,À rappeler,À relancer dans 7 jours
+I054,P056,2026-08-14,Email,Email initial,Pas intéressé,Numéro injoignable
+I055,P017,2026-08-09,Email,Appel,Pas intéressé,À relancer dans 7 jours
+I056,P074,2026-07-23,Téléphone,WhatsApp,Promesse de réponse,
+I057,P108,2026-07-18,LinkedIn,Démonstration,Promesse de réponse,Demande une proposition
+I058,P097,2026-06-11,Téléphone,Relance 2,Sans réponse,Intéressé par l'offre
+I059,P138,2026-07-21,Téléphone,Message LinkedIn,Promesse de réponse,À relancer dans 7 jours
+I060,P006,2026-07-09,LinkedIn,Réunion,Demande d'information,Demande une proposition
+I061,P059,2026-07-02,LinkedIn,Relance 2,Réponse positive,Numéro injoignable
+I062,P049,2026-09-01,Email,Email initial,Promesse de réponse,
+I063,P108,2026-08-18,Email,Message LinkedIn,Réponse positive,À relancer dans 7 jours
+I064,P026,2026-08-16,Email,Démonstration,Demande d'information,
+I065,P013,2026-07-02,Email,Réunion,Pas intéressé,Intéressé par l'offre
+I066,P139,2026-06-28,Email,WhatsApp,Demande d'information,Numéro injoignable
+I067,P060,2026-09-13,WhatsApp,Relance 2,Réponse positive,Numéro injoignable
+I068,P037,2026-08-24,Téléphone,Réunion,À rappeler,Numéro injoignable
+I069,P016,2026-08-11,Téléphone,Réunion,Demande d'information,Demande une proposition
+I070,P013,2026-07-15,LinkedIn,Relance 2,Rendez-vous fixé,Demande une proposition
+I071,P105,2026-06-20,WhatsApp,Réunion,Réponse positive,À revoir en début d'année prochaine
+I072,P122,2026-07-01,Téléphone,Relance 1,Promesse de réponse,
+I073,P037,2026-09-12,LinkedIn,Email initial,Demande d'information,Demande une proposition
+I074,P107,2026-08-11,Téléphone,Réunion,Réponse positive,Numéro injoignable
+I075,P053,2026-07-13,Email,Démonstration,Promesse de réponse,Numéro injoignable
+I076,P024,2026-08-08,Téléphone,Email initial,À rappeler,Demande une proposition
+I077,P011,2026-06-10,Téléphone,Message LinkedIn,Pas intéressé,Intéressé par l'offre
+I078,P086,2026-07-09,Email,Message LinkedIn,Réponse positive,
+I079,P031,2026-09-04,LinkedIn,Message LinkedIn,Rendez-vous fixé,À revoir en début d'année prochaine
+I080,P053,2026-07-21,Téléphone,Relance 2,Promesse de réponse,Numéro injoignable
+I081,P098,2026-07-30,WhatsApp,Relance 1,À rappeler,Numéro injoignable
+I082,P132,2026-08-03,LinkedIn,Appel,Promesse de réponse,
+I083,P121,2026-09-06,WhatsApp,Message LinkedIn,À rappeler,Numéro injoignable
+I084,P106,2026-06-06,Téléphone,WhatsApp,Sans réponse,Numéro injoignable
+I085,P142,2026-08-14,LinkedIn,Relance 1,Réponse positive,Intéressé par l'offre
+I086,P085,2026-06-30,LinkedIn,Message LinkedIn,Pas intéressé,À revoir en début d'année prochaine
+I087,P087,2026-07-03,LinkedIn,Démonstration,Pas intéressé,Intéressé par l'offre
+I088,P091,2026-06-22,Téléphone,Démonstration,Réponse positive,À revoir en début d'année prochaine
+I089,P016,2026-08-07,Email,Appel,Promesse de réponse,
+I090,P013,2026-09-06,Email,Réunion,Réponse positive,
+I091,P060,2026-06-09,Téléphone,Email initial,Réponse positive,À revoir en début d'année prochaine
+I092,P117,2026-07-18,Email,Démonstration,Rendez-vous fixé,Demande une proposition
+I093,P005,2026-06-01,LinkedIn,Email initial,Sans réponse,À revoir en début d'année prochaine
+I094,P071,2026-08-08,WhatsApp,Email initial,Demande d'information,
+I095,P111,2026-09-12,Téléphone,Appel,Sans réponse,À revoir en début d'année prochaine
+I096,P039,2026-07-01,Téléphone,Relance 1,Promesse de réponse,Numéro injoignable
+I097,P069,2026-09-10,LinkedIn,Appel,À rappeler,Demande une proposition
+I098,P118,2026-08-12,Téléphone,Message LinkedIn,À rappeler,
+I099,P021,2026-08-23,Email,Appel,Pas intéressé,Demande une proposition
+I100,P097,2026-08-10,LinkedIn,Email initial,Rendez-vous fixé,À relancer dans 7 jours
+I101,P044,2026-06-11,LinkedIn,Réunion,Rendez-vous fixé,Numéro injoignable
+I102,P145,2026-06-13,Email,Message LinkedIn,Réponse positive,
+I103,P146,2026-07-31,WhatsApp,Email initial,Sans réponse,
+I104,P072,2026-08-09,Email,WhatsApp,Promesse de réponse,Numéro injoignable
+I105,P005,2026-06-27,Téléphone,Réunion,Sans réponse,Numéro injoignable
+I106,P042,2026-08-12,Téléphone,Réunion,Rendez-vous fixé,À revoir en début d'année prochaine
+I107,P085,2026-07-20,Téléphone,Appel,Demande d'information,
+I108,P089,2026-06-07,Email,Réunion,Réponse positive,À relancer dans 7 jours
+I109,P088,2026-08-17,LinkedIn,Relance 2,Sans réponse,
+I110,P070,2026-09-09,LinkedIn,Démonstration,Réponse positive,Numéro injoignable
+I111,P142,2026-07-19,LinkedIn,WhatsApp,Rendez-vous fixé,À revoir en début d'année prochaine
+I112,P098,2026-06-11,WhatsApp,Message LinkedIn,Rendez-vous fixé,À relancer dans 7 jours
+I113,P022,2026-07-05,Téléphone,Réunion,Rendez-vous fixé,
+I114,P040,2026-09-03,LinkedIn,Relance 2,À rappeler,À relancer dans 7 jours
+I115,P024,2026-06-01,WhatsApp,Démonstration,À rappeler,Numéro injoignable
+I116,P027,2026-06-17,Email,WhatsApp,Pas intéressé,Demande une proposition
+I117,P143,2026-08-11,LinkedIn,Appel,Sans réponse,À relancer dans 7 jours
+I118,P091,2026-08-10,Email,Relance 2,Promesse de réponse,Demande une proposition
+I119,P004,2026-07-08,LinkedIn,Réunion,Promesse de réponse,À relancer dans 7 jours
+I120,P144,2026-07-02,Téléphone,Réunion,Réponse positive,Intéressé par l'offre
+I121,P069,2026-07-09,WhatsApp,Démonstration,Réponse positive,À relancer dans 7 jours
+I122,P043,2026-07-26,WhatsApp,Réunion,À rappeler,Demande une proposition
+I123,P020,2026-07-17,WhatsApp,Message LinkedIn,Rendez-vous fixé,
+I124,P127,2026-08-16,Téléphone,Démonstration,Sans réponse,Intéressé par l'offre
+I125,P078,2026-06-01,LinkedIn,Relance 2,Promesse de réponse,À revoir en début d'année prochaine
+I126,P098,2026-09-11,WhatsApp,Démonstration,À rappeler,Demande une proposition
+I127,P079,2026-06-18,WhatsApp,Relance 2,Demande d'information,
+I128,P052,2026-08-01,WhatsApp,WhatsApp,Pas intéressé,Numéro injoignable
+I129,P075,2026-09-03,LinkedIn,Message LinkedIn,À rappeler,Demande une proposition
+I130,P072,2026-09-13,LinkedIn,Relance 2,Sans réponse,À revoir en début d'année prochaine
+I131,P052,2026-08-15,Téléphone,Email initial,Rendez-vous fixé,Demande une proposition
+I132,P054,2026-07-27,WhatsApp,Appel,Promesse de réponse,Demande une proposition
+I133,P128,2026-06-18,WhatsApp,Message LinkedIn,À rappeler,
+I134,P040,2026-08-31,LinkedIn,Réunion,Sans réponse,Demande une proposition
+I135,P123,2026-08-14,LinkedIn,Réunion,Demande d'information,À relancer dans 7 jours
+I136,P093,2026-08-29,Email,Appel,Promesse de réponse,Intéressé par l'offre
+I137,P091,2026-06-22,Email,Réunion,Promesse de réponse,Numéro injoignable
+I138,P111,2026-06-14,Email,Appel,À rappeler,Intéressé par l'offre
+I139,P131,2026-09-04,Téléphone,Démonstration,À rappeler,Demande une proposition
+I140,P119,2026-09-07,Téléphone,Relance 2,Sans réponse,Demande une proposition
+I141,P027,2026-07-08,LinkedIn,Appel,Sans réponse,
+I142,P037,2026-07-15,WhatsApp,Relance 2,Pas intéressé,Intéressé par l'offre
+I143,P134,2026-08-01,WhatsApp,Démonstration,Sans réponse,Demande une proposition
+I144,P116,2026-07-11,Email,Relance 1,Sans réponse,
+I145,P030,2026-06-03,WhatsApp,Appel,Rendez-vous fixé,Intéressé par l'offre
+I146,P063,2026-08-06,Téléphone,WhatsApp,À rappeler,À revoir en début d'année prochaine
+I147,P110,2026-07-30,Téléphone,Réunion,Rendez-vous fixé,Intéressé par l'offre
+I148,P048,2026-08-21,LinkedIn,Réunion,Sans réponse,
+I149,P051,2026-07-28,LinkedIn,Réunion,Sans réponse,
+I150,P055,2026-06-27,WhatsApp,Appel,Demande d'information,À relancer dans 7 jours
+I151,P138,2026-06-24,WhatsApp,Relance 2,Réponse positive,Demande une proposition
+I152,P030,2026-07-04,LinkedIn,Relance 2,Demande d'information,Demande une proposition
+I153,P101,2026-08-15,Email,Relance 2,À rappeler,Demande une proposition
+I154,P045,2026-09-13,WhatsApp,Appel,Rendez-vous fixé,Intéressé par l'offre
+I155,P081,2026-06-16,Téléphone,Relance 1,Sans réponse,Intéressé par l'offre
+I156,P096,2026-08-28,Téléphone,Réunion,Pas intéressé,À revoir en début d'année prochaine
+I157,P036,2026-08-13,LinkedIn,Réunion,Réponse positive,Demande une proposition
+I158,P138,2026-08-28,Téléphone,WhatsApp,Pas intéressé,Numéro injoignable
+I159,P036,2026-06-24,WhatsApp,Démonstration,Demande d'information,À relancer dans 7 jours
+I160,P092,2026-06-02,LinkedIn,WhatsApp,Réponse positive,Demande une proposition
+I161,P144,2026-08-04,LinkedIn,Réunion,Rendez-vous fixé,Demande une proposition
+I162,P107,2026-08-30,LinkedIn,Démonstration,Réponse positive,À relancer dans 7 jours
+I163,P145,2026-06-04,Téléphone,Relance 1,Sans réponse,Numéro injoignable
+I164,P058,2026-08-08,WhatsApp,WhatsApp,Promesse de réponse,Demande une proposition
+I165,P145,2026-09-04,LinkedIn,Appel,Demande d'information,À relancer dans 7 jours
+I166,P069,2026-09-08,WhatsApp,Email initial,Promesse de réponse,
+I167,P113,2026-08-09,Téléphone,Réunion,Sans réponse,
+I168,P064,2026-07-09,Email,Démonstration,À rappeler,Numéro injoignable
+I169,P023,2026-07-27,Email,Message LinkedIn,Réponse positive,
+I170,P013,2026-08-28,WhatsApp,Réunion,Réponse positive,À revoir en début d'année prochaine
+I171,P036,2026-09-09,Téléphone,Message LinkedIn,Promesse de réponse,À relancer dans 7 jours
+I172,P146,2026-07-15,WhatsApp,WhatsApp,À rappeler,
+I173,P075,2026-07-08,WhatsApp,Appel,Réponse positive,Demande une proposition
+I174,P016,2026-07-06,Téléphone,WhatsApp,Réponse positive,Intéressé par l'offre
+I175,P083,2026-07-02,LinkedIn,Démonstration,Réponse positive,À revoir en début d'année prochaine
+I176,P069,2026-08-20,LinkedIn,Réunion,Pas intéressé,À relancer dans 7 jours
+I177,P024,2026-07-22,WhatsApp,Relance 2,Pas intéressé,Demande une proposition
+I178,P084,2026-08-14,Email,Appel,Rendez-vous fixé,Demande une proposition
+I179,P092,2026-06-09,LinkedIn,Message LinkedIn,Pas intéressé,Intéressé par l'offre
+I180,P127,2026-07-05,WhatsApp,Relance 1,À rappeler,À revoir en début d'année prochaine
+I181,P148,2026-06-17,LinkedIn,Relance 2,Rendez-vous fixé,À relancer dans 7 jours
+I182,P012,2026-06-13,LinkedIn,Email initial,Sans réponse,Intéressé par l'offre
+I183,P113,2026-07-29,Email,Réunion,Réponse positive,
+I184,P034,2026-08-23,WhatsApp,WhatsApp,Promesse de réponse,Numéro injoignable
+I185,P024,2026-08-23,WhatsApp,Relance 1,Sans réponse,Numéro injoignable
+I186,P043,2026-06-07,LinkedIn,Relance 1,Rendez-vous fixé,
+I187,P060,2026-07-25,Email,Appel,Sans réponse,Intéressé par l'offre
+I188,P123,2026-06-10,Téléphone,Message LinkedIn,Demande d'information,
+I189,P114,2026-06-02,Email,Relance 2,Promesse de réponse,À relancer dans 7 jours
+I190,P109,2026-08-28,Téléphone,Démonstration,Sans réponse,Intéressé par l'offre
+I191,P099,2026-06-12,Email,Appel,À rappeler,Numéro injoignable
+I192,P077,2026-06-18,LinkedIn,WhatsApp,Rendez-vous fixé,
+I193,P037,2026-06-09,Email,WhatsApp,Pas intéressé,Numéro injoignable
+I194,P055,2026-08-20,Téléphone,Réunion,Demande d'information,
+I195,P114,2026-06-28,Email,Appel,Réponse positive,À relancer dans 7 jours
+I196,P013,2026-09-02,LinkedIn,Relance 2,Pas intéressé,Numéro injoignable
+I197,P036,2026-07-02,WhatsApp,Appel,Réponse positive,À revoir en début d'année prochaine
+I198,P073,2026-09-08,Email,Relance 1,Réponse positive,À revoir en début d'année prochaine
+I199,P131,2026-06-25,LinkedIn,Relance 1,Rendez-vous fixé,À relancer dans 7 jours
+I200,P062,2026-08-03,LinkedIn,Appel,Réponse positive,Demande une proposition
+I201,P079,2026-06-10,Email,Relance 2,À rappeler,Intéressé par l'offre
+I202,P100,2026-08-12,LinkedIn,Relance 2,Demande d'information,
+I203,P045,2026-09-06,LinkedIn,Appel,Sans réponse,À revoir en début d'année prochaine
+I204,P018,2026-06-02,WhatsApp,Message LinkedIn,Sans réponse,À relancer dans 7 jours
+I205,P102,2026-08-04,WhatsApp,Réunion,Pas intéressé,
+I206,P103,2026-06-11,Téléphone,Relance 1,Sans réponse,Numéro injoignable
+I207,P021,2026-08-05,Téléphone,WhatsApp,Demande d'information,Numéro injoignable
+I208,P101,2026-08-15,Email,Relance 1,Rendez-vous fixé,Demande une proposition
+I209,P062,2026-06-08,Téléphone,Appel,Pas intéressé,À relancer dans 7 jours
+I210,P117,2026-08-18,Email,Relance 1,Rendez-vous fixé,
+I211,P045,2026-06-16,Email,WhatsApp,Rendez-vous fixé,À relancer dans 7 jours
+I212,P042,2026-08-03,WhatsApp,Relance 1,Réponse positive,Numéro injoignable
+I213,P033,2026-09-04,WhatsApp,Appel,Promesse de réponse,À relancer dans 7 jours
+I214,P086,2026-09-12,LinkedIn,Relance 1,Demande d'information,À relancer dans 7 jours
+I215,P068,2026-08-31,Email,Démonstration,Pas intéressé,À revoir en début d'année prochaine
+I216,P093,2026-06-08,LinkedIn,WhatsApp,À rappeler,Intéressé par l'offre
+I217,P066,2026-09-07,Email,Appel,Réponse positive,
+I218,P131,2026-06-01,Email,Email initial,Réponse positive,À relancer dans 7 jours
+I219,P121,2026-07-17,LinkedIn,WhatsApp,Réponse positive,À relancer dans 7 jours
+I220,P142,2026-09-11,LinkedIn,Message LinkedIn,À rappeler,Intéressé par l'offre
+I221,P107,2026-09-01,WhatsApp,Relance 1,Promesse de réponse,À relancer dans 7 jours
+I222,P147,2026-07-18,Email,Email initial,Réponse positive,Intéressé par l'offre
+I223,P133,2026-06-06,LinkedIn,Appel,Pas intéressé,Numéro injoignable
+I224,P080,2026-07-12,Email,Démonstration,Sans réponse,Numéro injoignable
+I225,P052,2026-07-08,WhatsApp,Message LinkedIn,Pas intéressé,Numéro injoignable
+I226,P046,2026-08-03,Téléphone,Message LinkedIn,Réponse positive,À relancer dans 7 jours
+I227,P105,2026-06-04,Téléphone,Relance 2,Rendez-vous fixé,
+I228,P003,2026-07-13,Email,Réunion,Promesse de réponse,
+I229,P079,2026-06-14,Téléphone,Message LinkedIn,Pas intéressé,Demande une proposition
+I230,P016,2026-06-19,WhatsApp,Appel,Sans réponse,Intéressé par l'offre
+I231,P134,2026-07-23,WhatsApp,Démonstration,Rendez-vous fixé,À relancer dans 7 jours
+I232,P149,2026-06-13,Téléphone,Réunion,Sans réponse,À revoir en début d'année prochaine
+I233,P146,2026-06-08,LinkedIn,WhatsApp,Réponse positive,Numéro injoignable
+I234,P067,2026-07-11,LinkedIn,Relance 2,À rappeler,Demande une proposition
+I235,P070,2026-06-30,Email,Message LinkedIn,Réponse positive,À revoir en début d'année prochaine
+I236,P028,2026-06-20,Email,WhatsApp,Pas intéressé,Demande une proposition
+I237,P081,2026-07-23,Email,Relance 2,Promesse de réponse,Intéressé par l'offre
+I238,P116,2026-07-10,LinkedIn,Relance 1,Promesse de réponse,À relancer dans 7 jours
+I239,P024,2026-06-21,WhatsApp,Email initial,Réponse positive,Numéro injoignable
+I240,P038,2026-06-12,Téléphone,Relance 2,Pas intéressé,À revoir en début d'année prochaine
+I241,P013,2026-08-26,WhatsApp,Relance 1,Promesse de réponse,Intéressé par l'offre
+I242,P008,2026-07-22,LinkedIn,Message LinkedIn,Sans réponse,Demande une proposition
+I243,P027,2026-09-11,Téléphone,Appel,Sans réponse,À relancer dans 7 jours
+I244,P057,2026-06-17,Téléphone,Réunion,À rappeler,
+I245,P022,2026-08-14,WhatsApp,Appel,Sans réponse,À relancer dans 7 jours
+I246,P051,2026-08-22,LinkedIn,WhatsApp,Sans réponse,Numéro injoignable
+I247,P032,2026-06-06,LinkedIn,Email initial,Réponse positive,À revoir en début d'année prochaine
+I248,P111,2026-09-01,LinkedIn,Démonstration,Sans réponse,Demande une proposition
+I249,P110,2026-06-23,WhatsApp,Message LinkedIn,Réponse positive,Numéro injoignable
+I250,P072,2026-07-28,Téléphone,Email initial,Demande d'information,À revoir en début d'année prochaine

@@ -5,13 +5,15 @@
 import streamlit as st
 import pandas as pd
 import io
+import altair as alt
 from datetime import date
 
 from database import (
     bootstrap, search_entreprises, get_pipeline,
     get_converted_entreprises, update_statut, save_message,
     get_stats, get_entreprise_by_id, get_all_entreprises,
-    get_connection,
+    get_connection, get_settings, save_settings, reset_database,
+    update_score
 )
 from llm      import generer_message_prospect, generer_relance, groq_disponible, get_message_simule
 from notifier import envoyer_gmail, envoyer_whatsapp, envoyer_sms, canaux_actifs
@@ -629,6 +631,17 @@ with st.sidebar:
     if canaux_html:
         st.markdown(f'<div style="padding:3px 12px 10px;line-height:1.9;">{canaux_html}</div>', unsafe_allow_html=True)
 
+    st.markdown('<div style="border-top:1px solid rgba(255,255,255,0.11);margin:8px 0;"></div>', unsafe_allow_html=True)
+    c1, c2 = st.columns(2)
+    with c1:
+        if st.button("🔴 Paramètres", use_container_width=True):
+            st.session_state["page_active"] = "settings"
+            st.rerun()
+    with c2:
+        if st.button("🟡 Réinit.", use_container_width=True):
+            reset_database()
+            st.rerun()
+
 # ══════════════════════════════════════════════════════════════════════════════
 # CONTENU PRINCIPAL
 # ══════════════════════════════════════════════════════════════════════════════
@@ -643,6 +656,7 @@ PAGE_META = {
     "export":    ("download",      "Export Excel",        "Exportez vos prospects scores et leurs messages"),
     "scraping":  ("globe",         "Scraping Annuaires",  "Collectez des prospects depuis les annuaires togolais"),
     "linkedin":  ("linkedin",      "LinkedIn",            "Prospection LinkedIn — fonctionnalite a venir"),
+    "settings":  ("settings",      "Paramètres",          "Configuration du profil et des grilles de scoring"),
 }
 meta = PAGE_META.get(page, PAGE_META["dashboard"])
 
@@ -702,7 +716,7 @@ if page == "dashboard":
     with col_r:
         st.markdown(f'<div class="section-title">{ic("activity",17,"#1B4332")} Impact mesure</div>', unsafe_allow_html=True)
         st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
-        st.markdown('<div class="impact-card" style="background:linear-gradient(135deg,#4A5568,#718096);margin-bottom:8px;"><div class="impact-value">4 h/jour</div><div class="impact-label">Avant CibleNet</div></div>', unsafe_allow_html=True)
+        st.markdown('<div class="impact-card" style="background:linear-gradient(135deg,#4A5568,#718096);margin-bottom:8px;"><div class="impact-value">Plusieurs heures/jour</div><div class="impact-label">Avant CibleNet</div></div>', unsafe_allow_html=True)
         st.markdown('<div class="impact-card" style="margin-bottom:8px;"><div class="impact-value">15 min/jour</div><div class="impact-label">Avec CibleNet</div></div>', unsafe_allow_html=True)
         st.markdown('<div class="impact-card" style="background:linear-gradient(135deg,#92400E,#D97706);"><div class="impact-value">94 %</div><div class="impact-label">Gain productivite</div></div>', unsafe_allow_html=True)
 
@@ -715,12 +729,100 @@ if page == "dashboard":
         df_top.columns = ["Entreprise","Secteur","Ville","Effectif","Score ICP","Statut"]
         st.dataframe(df_top, use_container_width=True, hide_index=True)
 
+    # ── Graphiques Altair Ultra-Modernes ──
+    st.markdown("<br><br>", unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{ic("bar-chart",17,"#1B4332")} Analyse du Pipeline</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+
+    all_prospects = get_all_entreprises()
+    if all_prospects:
+        df_all = pd.DataFrame(all_prospects)
+        
+        ca1, ca2 = st.columns(2)
+        
+        with ca1:
+            st.markdown("<div style='font-weight:700;color:#1B4332;margin-bottom:12px;font-size:0.95rem;'>Distribution des Scores ICP</div>", unsafe_allow_html=True)
+            # Area chart with gradient for scores
+            base_area = alt.Chart(df_all).transform_density(
+                'score',
+                as_=['score', 'density'],
+                extent=[0, 100]
+            )
+            
+            area = base_area.mark_area(
+                line={'color':'#1B4332', 'size': 3},
+                color=alt.Gradient(
+                    gradient='linear',
+                    stops=[alt.GradientStop(color='#52796F', offset=0),
+                           alt.GradientStop(color='rgba(82,121,111,0.05)', offset=1)],
+                    x1=1, x2=1, y1=1, y2=0
+                )
+            ).encode(
+                x=alt.X('score:Q', title='Score ICP', scale=alt.Scale(domain=[0, 100])),
+                y=alt.Y('density:Q', title='', axis=alt.Axis(labels=False, ticks=False, domain=False)),
+                tooltip=[alt.Tooltip('score:Q', title='Score ICP', format='.1f')]
+            ).properties(height=260)
+            
+            chart_area = area.configure_view(strokeWidth=0).configure_axis(grid=False, domainWidth=1.5, domainColor='#EDE8E1')
+            st.altair_chart(chart_area, use_container_width=True)
+
+        with ca2:
+            st.markdown("<div style='font-weight:700;color:#1B4332;margin-bottom:12px;font-size:0.95rem;'>Répartition du Pipeline (Statuts)</div>", unsafe_allow_html=True)
+            df_statut = pd.DataFrame([(s, n) for s, n in stats["par_statut"].items()], columns=["Statut", "Nombre"])
+            chart_donut = alt.Chart(df_statut).mark_arc(innerRadius=65, cornerRadius=5).encode(
+                theta=alt.Theta(field="Nombre", type="quantitative"),
+                color=alt.Color(field="Statut", type="nominal", 
+                    scale=alt.Scale(scheme='teals'), 
+                    legend=alt.Legend(title="Statuts", orient="right", labelFontSize=12, titleFontSize=13)),
+                tooltip=['Statut', 'Nombre']
+            ).properties(height=260).configure_view(strokeWidth=0)
+            st.altair_chart(chart_donut, use_container_width=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown("<div style='font-weight:700;color:#1B4332;margin-bottom:12px;font-size:0.95rem;'>Top Secteurs par Priorité (Score moyen)</div>", unsafe_allow_html=True)
+        df_sec = df_all.groupby('secteur').agg({'score':'mean', 'id':'count'}).reset_index().rename(columns={'id':'Nombre de prospects', 'score':'Score moyen'})
+        df_sec = df_sec.sort_values('Score moyen', ascending=False).head(8)
+        
+        chart_bar = alt.Chart(df_sec).mark_bar(cornerRadiusEnd=6, height=22).encode(
+            x=alt.X('Score moyen:Q', title='Score moyen ICP', scale=alt.Scale(domain=[0, 100])),
+            y=alt.Y('secteur:N', sort='-x', title='', axis=alt.Axis(labelFontSize=12, labelColor='#2D3748')),
+            color=alt.Color('Score moyen:Q', scale=alt.Scale(range=['#84A98C', '#1B4332']), legend=None),
+            tooltip=['secteur', alt.Tooltip('Score moyen:Q', format='.1f'), 'Nombre de prospects']
+        ).properties(height=280).configure_view(strokeWidth=0).configure_axis(grid=False, domainWidth=1.5, domainColor='#EDE8E1')
+        st.altair_chart(chart_bar, use_container_width=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+        ca3, ca4 = st.columns(2)
+        
+        with ca3:
+            st.markdown("<div style='font-weight:700;color:#1B4332;margin-bottom:12px;font-size:0.95rem;'>Répartition Géographique</div>", unsafe_allow_html=True)
+            df_loc = df_all.groupby('localisation').size().reset_index(name='Nombre')
+            df_loc = df_loc.sort_values('Nombre', ascending=False).head(10)
+            
+            chart_loc = alt.Chart(df_loc).mark_bar(cornerRadiusEnd=4, height=18).encode(
+                x=alt.X('Nombre:Q', title='Nombre de prospects'),
+                y=alt.Y('localisation:N', sort='-x', title='', axis=alt.Axis(labelFontSize=12)),
+                color=alt.Color('Nombre:Q', scale=alt.Scale(scheme='teals'), legend=None),
+                tooltip=['localisation', 'Nombre']
+            ).properties(height=260).configure_view(strokeWidth=0).configure_axis(grid=False, domainWidth=1.5, domainColor='#EDE8E1')
+            st.altair_chart(chart_loc, use_container_width=True)
+
+        with ca4:
+            st.markdown("<div style='font-weight:700;color:#1B4332;margin-bottom:12px;font-size:0.95rem;'>Taille (Effectif) vs Score ICP</div>", unsafe_allow_html=True)
+            chart_scatter = alt.Chart(df_all).mark_circle(size=80, opacity=0.7).encode(
+                x=alt.X('effectif:Q', title='Effectif (Salariés)', scale=alt.Scale(type='symlog')),
+                y=alt.Y('score:Q', title='Score ICP', scale=alt.Scale(domain=[0, 100])),
+                color=alt.Color('statut:N', scale=alt.Scale(scheme='set2'), legend=alt.Legend(title="Statut", orient="bottom")),
+                tooltip=['nom', 'secteur', 'effectif', 'score', 'statut']
+            ).properties(height=260).configure_view(strokeWidth=0).configure_axis(grid=False, domainWidth=1.5, domainColor='#EDE8E1')
+            st.altair_chart(chart_scatter, use_container_width=True)
+
 # ─────────────────────────────────────────────────────────────────────────────
 # PAGE : RECHERCHE & SCORING
 # ─────────────────────────────────────────────────────────────────────────────
 elif page == "scoring":
-    SECTEURS     = ["(Tous)","Banque","Assurance","Logistique","Education","Informatique","Commerce","Industrie","Agroalimentaire","Conseil","Sante","Telecom"]
-    LOCALISATIONS= ["(Toutes)","Lome","Kara","Tsevie","Kpalime","Sokode"]
+    SECTEURS     = ["(Tous)","Banque","Assurance","Finance","Logistique","Éducation","Education","Informatique","Technologie","Santé","Sante","Commerce","Industrie","Distribution","Services","Immobilier","Agroalimentaire","Conseil","Telecom"]
+    LOCALISATIONS= ["(Toutes)","Lomé","Lome","Agoè-Nyivé","Kara","Atakpamé","Tsévié","Tsevie","Kpalimé","Kpalime","Sokodé","Sokode"]
     TRANCHES     = {"(Tous)":(0,9999),"TPE 1-9":(1,9),"PME 10-49":(10,49),"ETI 50-250":(50,250),"Grande 250+":(251,9999)}
 
     st.markdown('<div class="filter-section">', unsafe_allow_html=True)
@@ -1219,3 +1321,96 @@ elif page == "linkedin":
     if st.button("Aller vers Import Excel", type="primary"):
         st.session_state["page_active"] = "import"
         st.rerun()
+
+# ─────────────────────────────────────────────────────────────────────────────
+# PAGE : PARAMÈTRES (SETTINGS)
+# ─────────────────────────────────────────────────────────────────────────────
+elif page == "settings":
+    st.markdown(f'<div class="section-title">{ic("settings",17,"#1B4332")} Configuration CibleNet</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+    
+    settings = get_settings()
+
+    st.markdown("### 🏢 Profil de l'entreprise")
+    with st.container():
+        p_nom = st.text_input("Nom de l'entreprise", value=settings["profil_entreprise"]["nom"])
+        p_desc = st.text_area("Description / Offre", value=settings["profil_entreprise"]["description"])
+
+    st.markdown("### 🎯 Grille de Scoring - Secteurs")
+    c1, c2 = st.columns(2)
+    with c1:
+        s_haute = st.text_input("Secteurs Haute Valeur (séparés par virgule)", value=",".join(settings["grille_secteurs"]["haute_valeur"]))
+        s_prio = st.text_input("Secteurs Prioritaires (séparés par virgule)", value=",".join(settings["grille_secteurs"]["prioritaire"]))
+        s_sec = st.text_input("Secteurs Secondaires (séparés par virgule)", value=",".join(settings["grille_secteurs"]["secondaire"]))
+    with c2:
+        pts_haute = st.number_input("Points Haute Valeur", value=settings["grille_secteurs"]["pts_haute"])
+        pts_prio = st.number_input("Points Prioritaires", value=settings["grille_secteurs"]["pts_prio"])
+        pts_sec = st.number_input("Points Secondaires", value=settings["grille_secteurs"]["pts_sec"])
+        pts_hors = st.number_input("Points Hors Cible (Secteurs non listés)", value=settings["grille_secteurs"]["pts_hors"])
+
+    st.markdown("### 👥 Grille de Scoring - Effectifs")
+    c3, c4 = st.columns(2)
+    with c3:
+        i_min = st.number_input("Effectif idéal (min)", value=settings["grille_effectif"]["ideal_min"])
+        i_max = st.number_input("Effectif idéal (max)", value=settings["grille_effectif"]["ideal_max"])
+        c_min = st.number_input("Effectif correct (min)", value=settings["grille_effectif"]["correct_min"])
+        c_max = st.number_input("Effectif correct (max)", value=settings["grille_effectif"]["correct_max"])
+        g_min = st.number_input("Effectif grand (min)", value=settings["grille_effectif"]["grand_min"])
+        g_max = st.number_input("Effectif grand (max)", value=settings["grille_effectif"]["grand_max"])
+    with c4:
+        pts_ideal = st.number_input("Points Idéal", value=settings["grille_effectif"]["pts_ideal"])
+        pts_correct = st.number_input("Points Correct", value=settings["grille_effectif"]["pts_correct"])
+        pts_grand = st.number_input("Points Grand", value=settings["grille_effectif"]["pts_grand"])
+        pts_inadapte = st.number_input("Points Inadapté", value=settings["grille_effectif"]["pts_inadapte"])
+
+    st.markdown("### 📍 Grille de Scoring - Zones & Signaux")
+    c5, c6 = st.columns(2)
+    with c5:
+        l_opt = st.text_input("Villes Optimales (séparées par virgule)", value=",".join(settings["grille_localisation"]["optimale"]))
+        l_part = st.text_input("Villes Partielles (séparées par virgule)", value=",".join(settings["grille_localisation"]["partielle"]))
+    with c6:
+        pts_opt = st.number_input("Points Ville Optimale", value=settings["grille_localisation"]["pts_optimale"])
+        pts_part = st.number_input("Points Ville Partielle", value=settings["grille_localisation"]["pts_partielle"])
+        pts_hors_loc = st.number_input("Points Ville Hors Zone", value=settings["grille_localisation"]["pts_hors"])
+        pts_sig = st.number_input("Points Signal de Croissance (présent)", value=settings["grille_signal"]["pts_signal"])
+
+    st.markdown("<br>", unsafe_allow_html=True)
+    if st.button("Enregistrer les paramètres et recalculer les scores", type="primary"):
+        new_settings = {
+            "profil_entreprise": {
+                "nom": p_nom,
+                "description": p_desc
+            },
+            "grille_secteurs": {
+                "haute_valeur": [s.strip() for s in s_haute.split(",") if s.strip()],
+                "prioritaire": [s.strip() for s in s_prio.split(",") if s.strip()],
+                "secondaire": [s.strip() for s in s_sec.split(",") if s.strip()],
+                "pts_haute": pts_haute, "pts_prio": pts_prio, "pts_sec": pts_sec, "pts_hors": pts_hors
+            },
+            "grille_effectif": {
+                "ideal_min": i_min, "ideal_max": i_max, "pts_ideal": pts_ideal,
+                "correct_min": c_min, "correct_max": c_max, "pts_correct": pts_correct,
+                "grand_min": g_min, "grand_max": g_max, "pts_grand": pts_grand,
+                "pts_inadapte": pts_inadapte
+            },
+            "grille_localisation": {
+                "optimale": [s.strip() for s in l_opt.split(",") if s.strip()],
+                "partielle": [s.strip() for s in l_part.split(",") if s.strip()],
+                "pts_optimale": pts_opt, "pts_partielle": pts_part, "pts_hors": pts_hors_loc
+            },
+            "grille_signal": {
+                "pts_signal": pts_sig, "pts_sans": 0
+            }
+        }
+        
+        save_settings(new_settings)
+        
+        # Recalculer les scores de tous les prospects
+        from scoring import score_prospect
+        prospects = get_all_entreprises()
+        for p in prospects:
+            nouveau_score, nouvelles_raisons, _ = score_prospect(p, new_settings)
+            update_score(p["id"], nouveau_score, nouvelles_raisons)
+            
+        st.success("Paramètres enregistrés et scores recalculés avec succès !")
+

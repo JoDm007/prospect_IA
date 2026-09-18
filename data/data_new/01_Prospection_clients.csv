@@ -1,0 +1,41 @@
+﻿client_id,entreprise,secteur,service_achete,montant_annuel_fcfa
+C001,Client 1,Services,Développement web,5000000
+C002,Client 2,Santé,Automatisation,1200000
+C003,Client 3,Agroalimentaire,Automatisation,250000
+C004,Client 4,Commerce,Application mobile,1200000
+C005,Client 5,Distribution,Automatisation,500000
+C006,Client 6,Technologie,Data/BI,500000
+C007,Client 7,Technologie,Data/BI,250000
+C008,Client 8,Logistique,Marketing digital,750000
+C009,Client 9,Industrie,Data/BI,1200000
+C010,Client 10,Immobilier,Data/BI,2500000
+C011,Client 11,Immobilier,Automatisation,750000
+C012,Client 12,Distribution,CRM,750000
+C013,Client 13,Services,Développement web,250000
+C014,Client 14,Santé,CRM,1200000
+C015,Client 15,Agroalimentaire,Application mobile,2500000
+C016,Client 16,Éducation,Développement web,250000
+C017,Client 17,Éducation,Marketing digital,500000
+C018,Client 18,Santé,Data/BI,5000000
+C019,Client 19,Finance,Développement web,2500000
+C020,Client 20,Logistique,Application mobile,500000
+C021,Client 21,Distribution,Développement web,2500000
+C022,Client 22,Immobilier,Marketing digital,5000000
+C023,Client 23,Immobilier,Data/BI,250000
+C024,Client 24,Immobilier,Data/BI,2500000
+C025,Client 25,Distribution,Data/BI,500000
+C026,Client 26,Industrie,Data/BI,750000
+C027,Client 27,Distribution,Automatisation,250000
+C028,Client 28,Commerce,CRM,500000
+C029,Client 29,Services,Développement web,250000
+C030,Client 30,Agroalimentaire,Automatisation,250000
+C031,Client 31,Immobilier,Data/BI,500000
+C032,Client 32,Distribution,Application mobile,5000000
+C033,Client 33,Distribution,Application mobile,250000
+C034,Client 34,Finance,Développement web,2500000
+C035,Client 35,Distribution,CRM,2500000
+C036,Client 36,Immobilier,CRM,750000
+C037,Client 37,Technologie,Automatisation,2500000
+C038,Client 38,Commerce,Application mobile,750000
+C039,Client 39,Immobilier,Développement web,500000
+C040,Client 40,Logistique,Marketing digital,1200000

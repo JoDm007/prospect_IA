@@ -1,0 +1,154 @@
+﻿prospect_id,entreprise,secteur,taille_effectif,ville,contact,fonction_contact,email,canal_prefere,besoin_potentiel,source,score_pertinence,statut,date_dernier_contact,prochaine_relance
+P001,Nova 1,Finance,25,Agoè-Nyivé,Ama E.,Gérant(e),contact1@entreprise.tg,Email,Data/BI,Facebook,,Nouveau,2026-08-12,2026-09-18
+P002,Impact 2,Agroalimentaire,5,Atakpamé,Ama E.,Marketing,contact2@entreprise.tg,LinkedIn,Data/BI,Référence client,,Contacté,,2027-01-15
+P003,Élite 3,Santé,12,Agoè-Nyivé,Mawuli A.,DG,contact3@entreprise.tg,Email,Application mobile,Référence client,68.0,Nouveau,,2027-01-15
+P004,Orion 4,Commerce,50,Lomé,Paul K.,Marketing,contact4@entreprise.tg,WhatsApp,Data/BI,Annuaire,42.0,Nouveau,,2026-09-18
+P005,Alliance 5,Commerce,18,Lomé,Nadia D.,Responsable commercial,contact5@entreprise.tg,WhatsApp,Développement web,Référence client,72.0,Contacté,,2026-10-01
+P006,Nova 6,Services,12,Atakpamé,Ama E.,Gérant(e),contact6@entreprise.tg,WhatsApp,Marketing digital,Site web,61.0,Converti,2026-09-01,2026-09-15
+P007,Impact 7,Finance,35,Kara,Paul K.,DG,contact7@entreprise.tg,WhatsApp,Développement web,Facebook,78.0,Converti,2026-09-05,2026-09-18
+P008,Alliance 8,Distribution,18,Kpalimé,Paul K.,Marketing,contact8@entreprise.tg,LinkedIn,Application mobile,Annuaire,55.0,À relancer,2026-09-05,2026-09-15
+P009,Avenir 9,Commerce,12,Kpalimé,Kossi D.,Responsable IT,contact9@entreprise.tg,LinkedIn,Automatisation,Site web,84.0,À relancer,2026-09-01,2027-09-01
+P010,Avenir 10,Technologie,8,Kpalimé,Paul K.,Responsable commercial,contact10@entreprise.tg,LinkedIn,Développement web,Facebook,,Converti,,2026-10-01
+P011,Orion 11,Distribution,120,Lomé,Paul K.,Marketing,contact11@entreprise.tg,Téléphone,Application mobile,Annuaire,91.0,À relancer,2026-08-12,2027-09-01
+P012,Élite 12,Industrie,5,Lomé,Mawuli A.,Responsable commercial,contact12@entreprise.tg,Téléphone,Data/BI,LinkedIn,42.0,Converti,2026-09-05,2026-09-15
+P013,Orion 13,Distribution,12,Kpalimé,Abla E.,Marketing,contact13@entreprise.tg,LinkedIn,Développement web,Site web,61.0,Converti,2026-09-01,2027-01-15
+P014,Élite 14,Industrie,120,Kara,Marie A.,Gérant(e),contact14@entreprise.tg,WhatsApp,CRM,Site web,91.0,Contacté,2026-09-10,2026-09-18
+P015,Avenir 15,Commerce,5,Agoè-Nyivé,Marie A.,DG,contact15@entreprise.tg,Email,Data/BI,Annuaire,68.0,Converti,2026-09-05,2026-09-18
+P016,Orion 16,Distribution,75,Agoè-Nyivé,Abla E.,Responsable IT,contact16@entreprise.tg,Email,Marketing digital,Facebook,72.0,Refusé,2026-09-05,2027-01-15
+P017,Avenir 17,Technologie,8,Lomé,Nadia D.,Responsable commercial,contact17@entreprise.tg,Email,Développement web,Annuaire,61.0,À relancer,2026-09-05,2026-09-18
+P018,Vision 18,Distribution,25,Kara,Ama E.,DG,contact18@entreprise.tg,Email,CRM,Site web,,Nouveau,2026-08-25,2026-09-18
+P019,Vision 19,Industrie,75,Agoè-Nyivé,Nadia D.,DG,contact19@entreprise.tg,Email,Automatisation,Référence client,84.0,En discussion,2026-09-05,
+P020,Orion 20,Technologie,75,Agoè-Nyivé,Ama E.,Responsable commercial,contact20@entreprise.tg,Email,Data/BI,Site web,,Converti,2026-09-01,2026-09-15
+P021,Avenir 21,Services,75,Atakpamé,Kossi D.,DG,contact21@entreprise.tg,Email,,Annuaire,42.0,À relancer,2026-08-12,
+P022,Impact 22,Logistique,8,Atakpamé,Ama E.,Marketing,contact22@entreprise.tg,Email,Automatisation,Site web,91.0,En discussion,2026-09-01,2026-09-18
+P023,Élite 23,Éducation,25,Kara,Kossi D.,Responsable commercial,contact23@entreprise.tg,Email,CRM,Facebook,42.0,Nouveau,2026-09-10,2026-09-18
+P024,Orion 24,Santé,12,Tsévié,Marie A.,Gérant(e),contact24@entreprise.tg,Téléphone,Automatisation,Site web,68.0,À relancer,,2027-09-01
+P025,Avenir 25,Technologie,120,Tsévié,Marie A.,Gérant(e),contact25@entreprise.tg,Email,Marketing digital,Site web,55.0,En discussion,2026-09-01,2027-09-01
+P026,Impact 26,Immobilier,18,Kpalimé,Paul K.,Marketing,contact26@entreprise.tg,Email,CRM,Facebook,68.0,Nouveau,2026-08-12,2026-10-01
+P027,Kékéli 27,Technologie,25,Agoè-Nyivé,Abla E.,Marketing,contact27@entreprise.tg,Email,CRM,LinkedIn,55.0,À relancer,2026-08-12,2026-10-01
+P028,Evolu 28,Agroalimentaire,12,Kara,Kossi D.,DG,contact28@entreprise.tg,Email,Application mobile,Annuaire,61.0,Converti,2026-08-12,2026-10-01
+P029,Orion 29,Logistique,12,Agoè-Nyivé,Kossi D.,Gérant(e),contact29@entreprise.tg,Email,Développement web,Référence client,78.0,Converti,,2026-09-18
+P030,Alliance 30,Distribution,8,Kara,Jean K.,Responsable IT,contact30@entreprise.tg,LinkedIn,Application mobile,Référence client,61.0,Contacté,2026-08-12,
+P031,Impact 31,Logistique,35,Tsévié,Marie A.,Responsable commercial,contact31@entreprise.tg,LinkedIn,Marketing digital,Site web,72.0,Nouveau,2026-08-12,2026-10-01
+P032,Kékéli 32,Services,25,Lomé,Marie A.,Marketing,contact32@entreprise.tg,WhatsApp,Automatisation,Site web,91.0,Nouveau,2026-09-05,2027-09-01
+P033,Impact 33,Santé,5,Kpalimé,Nadia D.,DG,contact33@entreprise.tg,Téléphone,Application mobile,Facebook,42.0,Converti,2026-09-01,2027-09-01
+P034,Élite 34,Technologie,8,Kpalimé,Paul K.,Marketing,contact34@entreprise.tg,LinkedIn,Application mobile,Facebook,68.0,À relancer,2026-08-25,2026-09-18
+P035,Vision 35,Technologie,50,Kpalimé,Kossi D.,Marketing,contact35@entreprise.tg,LinkedIn,Data/BI,LinkedIn,68.0,En discussion,2026-08-25,2027-01-15
+P036,Evolu 36,Services,35,Kara,Abla E.,Responsable IT,contact36@entreprise.tg,LinkedIn,,Annuaire,42.0,En discussion,2026-09-10,
+P037,Evolu 37,Immobilier,8,Agoè-Nyivé,Paul K.,Gérant(e),contact37@entreprise.tg,Téléphone,CRM,LinkedIn,61.0,Refusé,2026-09-10,2026-09-15
+P038,Sigma 38,Logistique,18,Kpalimé,Nadia D.,Responsable IT,contact38@entreprise.tg,Téléphone,Marketing digital,LinkedIn,42.0,Refusé,2026-08-25,2026-09-18
+P039,Orion 39,Industrie,5,Atakpamé,Ama E.,DG,contact39@entreprise.tg,LinkedIn,Marketing digital,Site web,91.0,À relancer,2026-09-01,2027-01-15
+P040,Evolu 40,Agroalimentaire,50,Atakpamé,Abla E.,Gérant(e),contact40@entreprise.tg,LinkedIn,Automatisation,Référence client,61.0,Converti,2026-09-01,2027-09-01
+P041,Sigma 41,Technologie,18,Tsévié,Abla E.,DG,contact41@entreprise.tg,Téléphone,Application mobile,Référence client,72.0,À relancer,2026-08-12,2026-09-18
+P042,Kékéli 42,Éducation,50,Kpalimé,Kossi D.,Gérant(e),contact42@entreprise.tg,LinkedIn,Application mobile,Site web,84.0,Refusé,2026-08-12,2026-09-18
+P043,Vision 43,Logistique,5,Atakpamé,Nadia D.,Responsable IT,,WhatsApp,Application mobile,Facebook,78.0,À relancer,,
+P044,Orion 44,Services,18,Kara,Ama E.,Responsable commercial,contact44@entreprise.tg,Email,Automatisation,Référence client,78.0,Converti,2026-08-25,2027-01-15
+P045,Kékéli 45,Services,120,Lomé,Nadia D.,Marketing,contact45@entreprise.tg,Email,CRM,Facebook,55.0,Refusé,2026-08-25,2026-09-15
+P046,Alliance 46,Logistique,35,Agoè-Nyivé,Abla E.,Responsable commercial,contact46@entreprise.tg,LinkedIn,Application mobile,Facebook,68.0,Nouveau,2026-09-05,2026-09-15
+P047,Orion 47,Finance,35,Agoè-Nyivé,Marie A.,DG,contact47@entreprise.tg,Téléphone,Développement web,LinkedIn,55.0,Contacté,2026-08-25,2027-01-15
+P048,Nova 48,Services,18,Kara,Paul K.,Responsable commercial,contact48@entreprise.tg,Email,,Annuaire,68.0,Nouveau,2026-09-10,2026-09-15
+P049,Alliance 49,Services,50,Kara,Ama E.,DG,contact49@entreprise.tg,Téléphone,CRM,Référence client,42.0,À relancer,2026-08-12,2026-10-01
+P050,Orion 50,Logistique,35,Lomé,Mawuli A.,DG,contact50@entreprise.tg,LinkedIn,CRM,Facebook,72.0,Converti,2026-09-05,
+P051,Kékéli 51,Logistique,12,Kpalimé,Paul K.,Marketing,contact51@entreprise.tg,LinkedIn,Automatisation,Facebook,68.0,En discussion,2026-08-25,2026-09-15
+P052,Alliance 52,Industrie,18,Kara,Nadia D.,Responsable commercial,,WhatsApp,Développement web,Facebook,61.0,En discussion,2026-09-01,2026-10-01
+P053,Alliance 53,Services,25,Atakpamé,Jean K.,Marketing,contact53@entreprise.tg,Email,Développement web,Facebook,84.0,À relancer,2026-08-25,
+P054,Sigma 54,Technologie,75,Kara,Jean K.,DG,contact54@entreprise.tg,LinkedIn,Marketing digital,Annuaire,68.0,Converti,2026-09-10,2026-10-01
+P055,Sigma 55,Agroalimentaire,120,Tsévié,Nadia D.,Marketing,contact55@entreprise.tg,LinkedIn,Application mobile,Référence client,68.0,Contacté,2026-08-12,
+P056,Impact 56,Immobilier,8,Kpalimé,Kossi D.,Gérant(e),contact56@entreprise.tg,LinkedIn,Application mobile,Site web,91.0,À relancer,2026-09-01,2026-09-15
+P057,Impact 57,Santé,18,Tsévié,Kossi D.,Responsable commercial,,Téléphone,Application mobile,LinkedIn,,À relancer,2026-09-01,
+P058,Kékéli 58,Technologie,75,Lomé,Jean K.,Marketing,contact58@entreprise.tg,LinkedIn,Automatisation,Référence client,55.0,Nouveau,2026-09-01,2027-01-15
+P059,Nova 59,Commerce,50,Kara,Marie A.,Marketing,contact59@entreprise.tg,Email,Développement web,Annuaire,68.0,Nouveau,2026-08-25,2026-09-15
+P060,Orion 60,Logistique,18,Atakpamé,Nadia D.,Responsable IT,contact60@entreprise.tg,WhatsApp,,Site web,78.0,En discussion,2026-09-10,2027-09-01
+P061,Avenir 61,Services,8,Agoè-Nyivé,Ama E.,Responsable commercial,contact61@entreprise.tg,Téléphone,Développement web,Annuaire,91.0,Nouveau,2026-08-25,2026-09-15
+P062,Vision 62,Industrie,75,Tsévié,Jean K.,Gérant(e),contact62@entreprise.tg,WhatsApp,Marketing digital,Facebook,42.0,Converti,2026-08-25,2026-10-01
+P063,Evolu 63,Technologie,18,Kara,Marie A.,Marketing,contact63@entreprise.tg,Téléphone,Application mobile,Annuaire,42.0,Nouveau,2026-08-25,2026-10-01
+P064,Evolu 64,Services,25,Kara,Marie A.,Responsable IT,contact64@entreprise.tg,LinkedIn,Application mobile,Site web,91.0,Refusé,2026-09-05,2026-09-15
+P065,Evolu 65,Finance,50,Kpalimé,Mawuli A.,Marketing,contact65@entreprise.tg,Email,Développement web,Site web,,Converti,2026-09-01,2027-09-01
+P066,Avenir 66,Distribution,75,Atakpamé,Abla E.,Responsable commercial,contact66@entreprise.tg,LinkedIn,Marketing digital,Facebook,42.0,Refusé,2026-09-01,2027-01-15
+P067,Élite 67,Immobilier,8,Agoè-Nyivé,Mawuli A.,Responsable IT,contact67@entreprise.tg,WhatsApp,Marketing digital,Facebook,91.0,Nouveau,2026-09-05,2026-09-15
+P068,Élite 68,Santé,35,Lomé,Nadia D.,Marketing,contact68@entreprise.tg,Email,Marketing digital,Site web,84.0,Refusé,2026-08-12,2026-09-18
+P069,Orion 69,Immobilier,75,Kpalimé,Abla E.,DG,contact69@entreprise.tg,Téléphone,Application mobile,Facebook,84.0,Nouveau,2026-08-12,
+P070,Evolu 70,Éducation,12,Tsévié,Jean K.,Marketing,contact70@entreprise.tg,Téléphone,,LinkedIn,84.0,Nouveau,,2026-09-18
+P071,Sigma 71,Santé,120,Kpalimé,Paul K.,Responsable IT,contact71@entreprise.tg,LinkedIn,Développement web,Facebook,91.0,Contacté,2026-09-05,2026-09-18
+P072,Evolu 72,Agroalimentaire,12,Lomé,Paul K.,Responsable IT,contact72@entreprise.tg,WhatsApp,,LinkedIn,68.0,Converti,2026-09-01,2027-09-01
+P073,Evolu 73,Technologie,75,Agoè-Nyivé,Abla E.,Marketing,contact73@entreprise.tg,WhatsApp,Data/BI,Site web,78.0,Refusé,2026-09-01,2026-09-18
+P074,Impact 74,Services,50,Agoè-Nyivé,Nadia D.,DG,contact74@entreprise.tg,LinkedIn,Marketing digital,Facebook,78.0,Converti,,2026-09-18
+P075,Sigma 75,Finance,12,Atakpamé,Mawuli A.,DG,contact75@entreprise.tg,LinkedIn,CRM,Site web,84.0,Nouveau,,2026-09-18
+P076,Vision 76,Technologie,12,Lomé,Abla E.,Responsable commercial,contact76@entreprise.tg,LinkedIn,Marketing digital,LinkedIn,72.0,Converti,2026-09-10,2027-01-15
+P077,Élite 77,Technologie,75,Atakpamé,Jean K.,Marketing,contact77@entreprise.tg,WhatsApp,Développement web,LinkedIn,78.0,Nouveau,,
+P078,Nova 78,Industrie,12,Kpalimé,Paul K.,DG,,Email,Application mobile,Référence client,72.0,Refusé,2026-08-25,2026-09-18
+P079,Orion 79,Logistique,12,Agoè-Nyivé,Kossi D.,DG,contact79@entreprise.tg,LinkedIn,Data/BI,Annuaire,84.0,À relancer,2026-08-25,2026-09-18
+P080,Sigma 80,Technologie,25,Kara,Paul K.,DG,contact80@entreprise.tg,LinkedIn,Application mobile,Site web,55.0,Nouveau,2026-09-05,2026-10-01
+P081,Evolu 81,Santé,50,Kpalimé,Paul K.,Responsable IT,contact81@entreprise.tg,Téléphone,Automatisation,Facebook,42.0,Contacté,2026-09-05,2027-09-01
+P082,Élite 82,Services,25,Kpalimé,Paul K.,DG,contact82@entreprise.tg,LinkedIn,Application mobile,LinkedIn,,À relancer,,2027-01-15
+P083,Alliance 83,Éducation,35,Agoè-Nyivé,Ama E.,Marketing,contact83@entreprise.tg,Téléphone,Marketing digital,LinkedIn,,En discussion,2026-09-05,2026-09-15
+P084,Evolu 84,Immobilier,12,Lomé,Paul K.,Responsable commercial,contact84@entreprise.tg,Téléphone,Développement web,Annuaire,91.0,En discussion,2026-09-10,2027-09-01
+P085,Alliance 85,Distribution,25,Kara,Paul K.,Responsable commercial,contact85@entreprise.tg,LinkedIn,CRM,Annuaire,61.0,Converti,,
+P086,Vision 86,Agroalimentaire,35,Lomé,Nadia D.,DG,contact86@entreprise.tg,Email,Automatisation,Référence client,68.0,À relancer,2026-09-05,
+P087,Élite 87,Commerce,18,Kara,Jean K.,Marketing,contact87@entreprise.tg,WhatsApp,Data/BI,Annuaire,42.0,Converti,2026-09-05,
+P088,Alliance 88,Technologie,50,Lomé,Kossi D.,DG,contact88@entreprise.tg,WhatsApp,Automatisation,LinkedIn,42.0,Contacté,2026-09-10,2026-09-18
+P089,Vision 89,Industrie,35,Kpalimé,Nadia D.,Marketing,contact89@entreprise.tg,Téléphone,Automatisation,LinkedIn,84.0,À relancer,2026-09-05,2026-10-01
+P090,Avenir 90,Immobilier,18,Kara,Abla E.,Gérant(e),contact90@entreprise.tg,Email,Marketing digital,Référence client,91.0,Converti,2026-09-01,2026-09-15
+P091,Vision 91,Santé,18,Lomé,Abla E.,DG,contact91@entreprise.tg,Email,CRM,Référence client,61.0,Contacté,2026-09-10,2026-09-18
+P092,Nova 92,Agroalimentaire,18,Atakpamé,Ama E.,Gérant(e),contact92@entreprise.tg,Téléphone,,Site web,,En discussion,2026-08-25,2026-09-18
+P093,Orion 93,Santé,12,Lomé,Jean K.,Gérant(e),,Téléphone,Data/BI,Référence client,,Contacté,2026-09-01,2026-09-15
+P094,Kékéli 94,Logistique,120,Lomé,Marie A.,Responsable IT,contact94@entreprise.tg,WhatsApp,Data/BI,Site web,42.0,Refusé,2026-09-10,2026-09-18
+P095,Evolu 95,Finance,120,Tsévié,Abla E.,DG,contact95@entreprise.tg,LinkedIn,,Facebook,78.0,Converti,2026-08-12,2027-01-15
+P096,Sigma 96,Commerce,8,Tsévié,Kossi D.,DG,contact96@entreprise.tg,WhatsApp,Automatisation,Site web,91.0,En discussion,2026-09-05,2027-09-01
+P097,Evolu 97,Logistique,8,Kpalimé,Marie A.,Marketing,contact97@entreprise.tg,Téléphone,Automatisation,Facebook,61.0,Refusé,2026-09-01,2027-01-15
+P098,Vision 98,Logistique,8,Tsévié,Nadia D.,Responsable commercial,contact98@entreprise.tg,WhatsApp,Développement web,Facebook,42.0,Nouveau,2026-08-12,2026-09-15
+P099,Vision 99,Commerce,35,Agoè-Nyivé,Jean K.,Marketing,contact99@entreprise.tg,WhatsApp,Marketing digital,LinkedIn,78.0,En discussion,,2027-01-15
+P100,Avenir 100,Santé,25,Tsévié,Marie A.,Marketing,contact100@entreprise.tg,Téléphone,Marketing digital,Facebook,61.0,Nouveau,2026-09-01,2027-09-01
+P101,Élite 101,Commerce,25,Atakpamé,Ama E.,Responsable IT,contact101@entreprise.tg,Email,Data/BI,Référence client,,Contacté,2026-09-01,
+P102,Alliance 102,Immobilier,35,Lomé,Kossi D.,Gérant(e),contact102@entreprise.tg,LinkedIn,CRM,Annuaire,,Nouveau,,2027-09-01
+P103,Impact 103,Logistique,50,Kara,Mawuli A.,Gérant(e),contact103@entreprise.tg,WhatsApp,,Site web,42.0,Nouveau,2026-08-25,2026-09-18
+P104,Evolu 104,Finance,8,Tsévié,Abla E.,Responsable IT,contact104@entreprise.tg,LinkedIn,Automatisation,Référence client,61.0,À relancer,2026-08-12,2026-10-01
+P105,Vision 105,Commerce,25,Kpalimé,Abla E.,Marketing,contact105@entreprise.tg,Email,Développement web,Facebook,,Nouveau,2026-08-25,2026-10-01
+P106,Impact 106,Distribution,25,Tsévié,Mawuli A.,DG,,LinkedIn,Développement web,Annuaire,78.0,À relancer,,2026-09-18
+P107,Orion 107,Agroalimentaire,35,Lomé,Nadia D.,DG,contact107@entreprise.tg,LinkedIn,CRM,Référence client,78.0,À relancer,2026-09-05,
+P108,Vision 108,Santé,8,Kara,Jean K.,Responsable commercial,contact108@entreprise.tg,LinkedIn,,Référence client,42.0,Refusé,2026-08-12,2026-09-18
+P109,Vision 109,Services,50,Atakpamé,Marie A.,Responsable IT,contact109@entreprise.tg,WhatsApp,Développement web,Référence client,55.0,Nouveau,2026-09-10,
+P110,Nova 110,Agroalimentaire,120,Agoè-Nyivé,Mawuli A.,Responsable commercial,contact110@entreprise.tg,Téléphone,Développement web,LinkedIn,55.0,En discussion,2026-08-25,2026-09-18
+P111,Evolu 111,Distribution,8,Agoè-Nyivé,Abla E.,Responsable IT,contact111@entreprise.tg,LinkedIn,Marketing digital,Site web,72.0,Converti,2026-09-01,2026-09-18
+P112,Sigma 112,Commerce,75,Kara,Paul K.,Responsable commercial,contact112@entreprise.tg,WhatsApp,Data/BI,LinkedIn,68.0,Refusé,2026-09-05,2026-09-15
+P113,Avenir 113,Immobilier,25,Lomé,Marie A.,Marketing,contact113@entreprise.tg,LinkedIn,Automatisation,Site web,91.0,Converti,2026-08-12,2027-01-15
+P114,Evolu 114,Technologie,18,Tsévié,Abla E.,Marketing,contact114@entreprise.tg,Email,Automatisation,LinkedIn,72.0,Converti,2026-08-12,2027-09-01
+P115,Kékéli 115,Finance,18,Kpalimé,Abla E.,Responsable IT,contact115@entreprise.tg,Téléphone,Application mobile,Référence client,68.0,Refusé,2026-09-05,2026-10-01
+P116,Evolu 116,Finance,35,Lomé,Mawuli A.,DG,contact116@entreprise.tg,LinkedIn,Application mobile,Référence client,55.0,En discussion,2026-08-12,2027-09-01
+P117,Kékéli 117,Immobilier,25,Kpalimé,Nadia D.,Gérant(e),contact117@entreprise.tg,Email,Application mobile,Site web,78.0,Converti,2026-09-01,2026-09-18
+P118,Orion 118,Commerce,50,Atakpamé,Mawuli A.,DG,contact118@entreprise.tg,Téléphone,Développement web,Référence client,84.0,Contacté,2026-08-25,2026-09-18
+P119,Kékéli 119,Commerce,25,Lomé,Jean K.,Responsable commercial,contact119@entreprise.tg,Téléphone,Data/BI,Facebook,55.0,Contacté,2026-08-25,
+P120,Evolu 120,Distribution,75,Lomé,Nadia D.,Responsable commercial,contact120@entreprise.tg,Téléphone,Automatisation,Site web,68.0,Converti,2026-09-05,2026-09-18
+P121,Orion 121,Éducation,25,Kara,Ama E.,Responsable commercial,contact121@entreprise.tg,LinkedIn,Automatisation,Référence client,78.0,À relancer,2026-09-10,2027-01-15
+P122,Kékéli 122,Éducation,12,Tsévié,Jean K.,Responsable IT,contact122@entreprise.tg,Email,Marketing digital,Site web,42.0,En discussion,2026-08-12,2026-09-18
+P123,Alliance 123,Industrie,120,Agoè-Nyivé,Nadia D.,DG,contact123@entreprise.tg,Téléphone,,Facebook,72.0,Nouveau,2026-09-05,2026-09-15
+P124,Vision 124,Agroalimentaire,35,Agoè-Nyivé,Nadia D.,DG,contact124@entreprise.tg,Email,Application mobile,LinkedIn,72.0,Contacté,2026-08-25,2026-09-15
+P125,Alliance 125,Industrie,12,Kpalimé,Abla E.,Responsable IT,contact125@entreprise.tg,Email,CRM,Référence client,61.0,Contacté,2026-09-10,
+P126,Evolu 126,Agroalimentaire,50,Lomé,Paul K.,Gérant(e),contact126@entreprise.tg,Email,Développement web,Facebook,84.0,Nouveau,2026-08-12,2027-01-15
+P127,Evolu 127,Agroalimentaire,5,Kpalimé,Ama E.,Gérant(e),contact127@entreprise.tg,Email,Data/BI,Référence client,61.0,À relancer,2026-09-05,2026-09-18
+P128,Nova 128,Agroalimentaire,35,Lomé,Jean K.,Responsable IT,contact128@entreprise.tg,Email,Marketing digital,Facebook,72.0,En discussion,,2026-09-15
+P129,Élite 129,Commerce,35,Agoè-Nyivé,Marie A.,Marketing,contact129@entreprise.tg,WhatsApp,Développement web,LinkedIn,72.0,À relancer,2026-09-01,
+P130,Kékéli 130,Technologie,75,Kpalimé,Abla E.,Gérant(e),contact130@entreprise.tg,Email,Marketing digital,Facebook,,En discussion,2026-08-25,2026-09-15
+P131,Impact 131,Finance,35,Tsévié,Nadia D.,Marketing,contact131@entreprise.tg,Email,,Annuaire,68.0,En discussion,2026-08-12,
+P132,Élite 132,Santé,8,Tsévié,Nadia D.,Responsable IT,contact132@entreprise.tg,LinkedIn,Application mobile,Annuaire,84.0,Converti,2026-09-05,2026-10-01
+P133,Orion 133,Santé,8,Kpalimé,Nadia D.,DG,contact133@entreprise.tg,Téléphone,Data/BI,Référence client,72.0,Nouveau,2026-08-12,2026-10-01
+P134,Alliance 134,Santé,75,Atakpamé,Nadia D.,Gérant(e),contact134@entreprise.tg,WhatsApp,Automatisation,LinkedIn,72.0,À relancer,2026-09-05,2026-10-01
+P135,Avenir 135,Commerce,50,Tsévié,Kossi D.,DG,contact135@entreprise.tg,LinkedIn,CRM,Annuaire,42.0,Contacté,,2026-10-01
+P136,Élite 136,Logistique,5,Atakpamé,Kossi D.,Responsable IT,contact136@entreprise.tg,WhatsApp,Automatisation,LinkedIn,55.0,À relancer,2026-09-01,2027-01-15
+P137,Élite 137,Technologie,25,Agoè-Nyivé,Marie A.,DG,contact137@entreprise.tg,LinkedIn,Data/BI,Facebook,91.0,Nouveau,2026-09-01,2026-10-01
+P138,Sigma 138,Éducation,25,Kpalimé,Abla E.,Gérant(e),contact138@entreprise.tg,Email,Automatisation,Annuaire,84.0,Nouveau,,2026-10-01
+P139,Élite 139,Commerce,120,Atakpamé,Paul K.,Responsable commercial,contact139@entreprise.tg,Téléphone,,Référence client,91.0,Contacté,2026-08-12,2026-09-18
+P140,Kékéli 140,Éducation,75,Lomé,Mawuli A.,Marketing,contact140@entreprise.tg,LinkedIn,,Site web,55.0,À relancer,2026-08-12,2026-09-15
+P141,Alliance 141,Logistique,75,Atakpamé,Nadia D.,Responsable IT,contact141@entreprise.tg,Email,Développement web,Référence client,42.0,Refusé,2026-09-05,
+P142,Orion 142,Immobilier,12,Atakpamé,Kossi D.,Gérant(e),contact142@entreprise.tg,Email,,LinkedIn,91.0,Contacté,2026-09-01,2026-09-18
+P143,Kékéli 143,Immobilier,18,Tsévié,Paul K.,DG,contact143@entreprise.tg,WhatsApp,Développement web,Référence client,91.0,Nouveau,2026-09-10,
+P144,Kékéli 144,Services,12,Agoè-Nyivé,Mawuli A.,Marketing,,Email,CRM,LinkedIn,68.0,Converti,2026-08-25,2027-09-01
+P145,Vision 145,Services,5,Kara,Paul K.,Responsable commercial,contact145@entreprise.tg,LinkedIn,Application mobile,Facebook,42.0,Converti,2026-08-12,2026-09-18
+P146,Sigma 146,Logistique,75,Kara,Ama E.,Responsable commercial,contact146@entreprise.tg,WhatsApp,,Référence client,72.0,Refusé,2026-08-25,2026-10-01
+P147,Orion 147,Agroalimentaire,8,Tsévié,Ama E.,Responsable IT,contact147@entreprise.tg,LinkedIn,Développement web,Annuaire,42.0,Nouveau,2026-09-01,2027-01-15
+P148,Evolu 148,Logistique,18,Agoè-Nyivé,Mawuli A.,Marketing,contact148@entreprise.tg,Téléphone,,Annuaire,84.0,À relancer,2026-09-05,2027-01-15
+P149,Alliance 149,Industrie,5,Lomé,Nadia D.,Marketing,contact149@entreprise.tg,Téléphone,Développement web,Site web,72.0,Nouveau,2026-08-12,2026-10-01
+P150,Sigma 150,Services,75,Tsévié,Jean K.,DG,contact150@entreprise.tg,WhatsApp,Marketing digital,Référence client,78.0,En discussion,2026-08-12,2027-01-15
+P013,Orion 13,Distribution,12,Kpalimé,Abla E.,Marketing,contact13@entreprise.tg,LinkedIn,Développement web,Site web,61.0,Converti,2026-09-01,2027-01-15
+P046,Alliance 46,Logistique,35,Agoè-Nyivé,Abla E.,Responsable commercial,contact46@entreprise.tg,LinkedIn,Application mobile,Facebook,68.0,Nouveau,2026-09-05,2026-09-15
+P079,Orion 79,Logistique,12,Agoè-Nyivé,Kossi D.,DG,contact79@entreprise.tg,LinkedIn,Data/BI,Annuaire,84.0,À relancer,2026-08-25,2026-09-18

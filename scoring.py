@@ -1,19 +1,14 @@
 # scoring.py — Moteur de scoring ICP Opticom Business
 # Python pur — aucune dépendance externe
 
-def score_prospect(company: dict) -> tuple[int, str, str]:
+def score_prospect(company: dict, settings: dict = None) -> tuple[int, str, str]:
     """
     Calcule le score ICP d'une entreprise (0-100).
-
-    Args:
-        company: dict avec les clés secteur, effectif, localisation, signal_croissance
-
-    Returns:
-        (score, score_reasons, statut)
-        - score       : entier 0-100
-        - score_reasons : chaîne des raisons séparées par " | "
-        - statut      : "QUALIFIE_HAUTE_PRIORITE" | "QUALIFIE_PRIORITE_MOYENNE" | "DISQUALIFIE"
     """
+    if settings is None:
+        from database import get_settings
+        settings = get_settings()
+
     score = 0
     reasons = []
 
@@ -25,50 +20,56 @@ def score_prospect(company: dict) -> tuple[int, str, str]:
         signal = ""
     signal = str(signal).strip()
 
-    # ── Critère 1 — Secteur (30 pts max) ──────────────────────────────────
-    if secteur in ["Banque", "Assurance"]:
-        score += 30
+    grille_sec = settings.get("grille_secteurs", {})
+    grille_eff = settings.get("grille_effectif", {})
+    grille_loc = settings.get("grille_localisation", {})
+    grille_sig = settings.get("grille_signal", {})
+
+    # ── Critère 1 — Secteur ───────────────────────────────────────────────
+    if secteur in grille_sec.get("haute_valeur", []):
+        score += grille_sec.get("pts_haute", 30)
         reasons.append(f"Secteur prioritaire haute valeur ({secteur})")
-    elif secteur in ["Logistique", "Éducation", "Informatique"]:
-        score += 25
+    elif secteur in grille_sec.get("prioritaire", []):
+        score += grille_sec.get("pts_prio", 25)
         reasons.append(f"Secteur prioritaire ({secteur})")
-    elif secteur in ["Commerce", "Industrie"]:
-        score += 15
+    elif secteur in grille_sec.get("secondaire", []):
+        score += grille_sec.get("pts_sec", 15)
         reasons.append(f"Secteur secondaire ({secteur})")
     else:
-        score += 5
+        score += grille_sec.get("pts_hors", 5)
         reasons.append(f"Secteur hors cible ({secteur})")
 
-    # ── Critère 2 — Effectif (25 pts max) ─────────────────────────────────
-    if 50 <= effectif <= 250:
-        score += 25
+    # ── Critère 2 — Effectif ──────────────────────────────────────────────
+    if grille_eff.get("ideal_min", 50) <= effectif <= grille_eff.get("ideal_max", 250):
+        score += grille_eff.get("pts_ideal", 25)
         reasons.append(f"Taille idéale ({effectif} salariés)")
-    elif 10 <= effectif < 50:
-        score += 20
+    elif grille_eff.get("correct_min", 10) <= effectif <= grille_eff.get("correct_max", 49):
+        score += grille_eff.get("pts_correct", 20)
         reasons.append(f"Taille correcte ({effectif} salariés)")
-    elif 250 < effectif <= 500:
-        score += 15
+    elif grille_eff.get("grand_min", 251) <= effectif <= grille_eff.get("grand_max", 500):
+        score += grille_eff.get("pts_grand", 15)
         reasons.append(f"Grande entreprise ({effectif} salariés)")
     else:
-        score += 5
+        score += grille_eff.get("pts_inadapte", 5)
         reasons.append(f"Taille inadaptée ({effectif} salariés)")
 
-    # ── Critère 3 — Localisation (20 pts max) ─────────────────────────────
-    if ville == "Lomé":
-        score += 20
-        reasons.append("Lomé, couverture Fibre optimale")
-    elif ville == "Kara":
-        score += 15
-        reasons.append("Kara, couverture Fibre partielle")
+    # ── Critère 3 — Localisation ──────────────────────────────────────────
+    if ville in grille_loc.get("optimale", []):
+        score += grille_loc.get("pts_optimale", 20)
+        reasons.append(f"Localisation optimale ({ville})")
+    elif ville in grille_loc.get("partielle", []):
+        score += grille_loc.get("pts_partielle", 15)
+        reasons.append(f"Localisation partielle ({ville})")
     else:
-        score += 5
+        score += grille_loc.get("pts_hors", 5)
         reasons.append(f"Hors zone prioritaire ({ville})")
 
-    # ── Critère 4 — Signal de croissance (25 pts max) ─────────────────────
+    # ── Critère 4 — Signal de croissance ──────────────────────────────────
     if signal and signal.lower() not in ["", "aucun", "nan"]:
-        score += 25
+        score += grille_sig.get("pts_signal", 25)
         reasons.append(f"Signal d'expansion : {signal}")
     else:
+        score += grille_sig.get("pts_sans", 0)
         reasons.append("Aucun signal de croissance détecté")
 
     # ── Statut de qualification ────────────────────────────────────────────

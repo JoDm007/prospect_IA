@@ -4,6 +4,7 @@
 import sqlite3
 import csv
 import os
+import json
 from datetime import date
 from scoring import score_prospect
 
@@ -44,10 +45,80 @@ def init_db() -> None:
             message_genere    TEXT
         )
     """)
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS settings (
+            cle TEXT PRIMARY KEY,
+            valeur TEXT
+        )
+    """)
     conn.commit()
     conn.close()
     print(f"[DB] Base initialisée : {DB_PATH}")
 
+
+# ── Paramètres ────────────────────────────────────────────────────────────────
+
+def get_settings() -> dict:
+    """Retourne la configuration. Si vide, insère la config par défaut."""
+    conn = get_connection()
+    rows = conn.execute("SELECT cle, valeur FROM settings").fetchall()
+    conn.close()
+    
+    settings = {}
+    for r in rows:
+        try:
+            settings[r["cle"]] = json.loads(r["valeur"])
+        except:
+            settings[r["cle"]] = r["valeur"]
+            
+    if not settings:
+        settings = {
+            "profil_entreprise": {
+                "nom": "Opticom Business",
+                "description": "Fibre Pro · Flotte Mobile · API SMS"
+            },
+            "grille_secteurs": {
+                "haute_valeur": ["Banque", "Assurance", "Finance"],
+                "prioritaire": ["Logistique", "Éducation", "Education", "Informatique", "Technologie", "Santé", "Sante"],
+                "secondaire": ["Commerce", "Industrie", "Distribution", "Services", "Immobilier"],
+                "pts_haute": 30, "pts_prio": 25, "pts_sec": 15, "pts_hors": 5
+            },
+            "grille_effectif": {
+                "ideal_min": 50, "ideal_max": 250, "pts_ideal": 25,
+                "correct_min": 10, "correct_max": 49, "pts_correct": 20,
+                "grand_min": 251, "grand_max": 500, "pts_grand": 15,
+                "pts_inadapte": 5
+            },
+            "grille_localisation": {
+                "optimale": ["Lomé", "Lome", "Agoè-Nyivé", "Agoe-Nyive"],
+                "partielle": ["Kara"],
+                "pts_optimale": 20, "pts_partielle": 15, "pts_hors": 5
+            },
+            "grille_signal": {
+                "pts_signal": 25, "pts_sans": 0
+            }
+        }
+        save_settings(settings)
+    return settings
+
+def save_settings(settings: dict) -> None:
+    conn = get_connection()
+    cursor = conn.cursor()
+    for k, v in settings.items():
+        cursor.execute(
+            "INSERT OR REPLACE INTO settings (cle, valeur) VALUES (?, ?)",
+            (k, json.dumps(v))
+        )
+    conn.commit()
+    conn.close()
+
+def reset_database() -> None:
+    """Vide la table entreprises et réimporte le fichier CSV."""
+    conn = get_connection()
+    conn.execute("DELETE FROM entreprises")
+    conn.commit()
+    conn.close()
+    import_from_csv()
 
 # ── Import CSV ────────────────────────────────────────────────────────────────
 
