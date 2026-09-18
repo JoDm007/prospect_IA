@@ -634,11 +634,11 @@ with st.sidebar:
     st.markdown('<div style="border-top:1px solid rgba(255,255,255,0.11);margin:8px 0;"></div>', unsafe_allow_html=True)
     c1, c2 = st.columns(2)
     with c1:
-        if st.button("🔴 Paramètres", use_container_width=True):
+        if st.button("Paramètres", icon=":material/settings:", use_container_width=True):
             st.session_state["page_active"] = "settings"
             st.rerun()
     with c2:
-        if st.button("🟡 Réinit.", use_container_width=True):
+        if st.button("Réinit.", icon=":material/refresh:", use_container_width=True):
             reset_database()
             st.rerun()
 
@@ -1331,12 +1331,12 @@ elif page == "settings":
     
     settings = get_settings()
 
-    st.markdown("### 🏢 Profil de l'entreprise")
+    st.markdown(f"### {ic('briefcase', 22, '#1B4332')} Profil de l'entreprise", unsafe_allow_html=True)
     with st.container():
         p_nom = st.text_input("Nom de l'entreprise", value=settings["profil_entreprise"]["nom"])
         p_desc = st.text_area("Description / Offre", value=settings["profil_entreprise"]["description"])
 
-    st.markdown("### 🎯 Grille de Scoring - Secteurs")
+    st.markdown(f"### {ic('target', 22, '#1B4332')} Grille de Scoring - Secteurs", unsafe_allow_html=True)
     c1, c2 = st.columns(2)
     with c1:
         s_haute = st.text_input("Secteurs Haute Valeur (séparés par virgule)", value=",".join(settings["grille_secteurs"]["haute_valeur"]))
@@ -1348,7 +1348,7 @@ elif page == "settings":
         pts_sec = st.number_input("Points Secondaires", value=settings["grille_secteurs"]["pts_sec"])
         pts_hors = st.number_input("Points Hors Cible (Secteurs non listés)", value=settings["grille_secteurs"]["pts_hors"])
 
-    st.markdown("### 👥 Grille de Scoring - Effectifs")
+    st.markdown(f"### {ic('users', 22, '#1B4332')} Grille de Scoring - Effectifs", unsafe_allow_html=True)
     c3, c4 = st.columns(2)
     with c3:
         i_min = st.number_input("Effectif idéal (min)", value=settings["grille_effectif"]["ideal_min"])
@@ -1363,7 +1363,7 @@ elif page == "settings":
         pts_grand = st.number_input("Points Grand", value=settings["grille_effectif"]["pts_grand"])
         pts_inadapte = st.number_input("Points Inadapté", value=settings["grille_effectif"]["pts_inadapte"])
 
-    st.markdown("### 📍 Grille de Scoring - Zones & Signaux")
+    st.markdown(f"### {ic('map-pin', 22, '#1B4332')} Grille de Scoring - Zones & Signaux", unsafe_allow_html=True)
     c5, c6 = st.columns(2)
     with c5:
         l_opt = st.text_input("Villes Optimales (séparées par virgule)", value=",".join(settings["grille_localisation"]["optimale"]))
