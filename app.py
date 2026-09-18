@@ -96,7 +96,7 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 :root {
-    --vert-foret:#1B4332; --vert-sauge:#52796F; --vert-clair:#84A98C;
+    --bleu-fonce:#1E3A8A; --bleu-moyen:#3B82F6; --bleu-clair:#93C5FD;
     --beige-chaud:#F8F5F0; --beige-sombre:#EDE8E1;
     --or-pale:#F9E8A0; --ardoise:#2D3748; --gris-doux:#718096; --blanc:#FEFEFE;
 }
@@ -105,7 +105,7 @@ html,body,[class*="css"]{ font-family:'Inter',sans-serif !important; }
 
 /* ── SIDEBAR ── */
 [data-testid="stSidebar"]{
-    background:linear-gradient(180deg,#1B4332 0%,#2D5A45 55%,#3D7A5E 100%) !important;
+    background:linear-gradient(180deg,#1E3A8A 0%,#1D4ED8 55%,#2563EB 100%) !important;
     border-right:none !important;
     box-shadow:4px 0 20px rgba(27,67,50,0.3) !important;
 }
@@ -153,7 +153,7 @@ html,body,[class*="css"]{ font-family:'Inter',sans-serif !important; }
 
 /* ── Hero ── */
 .hero-header{
-    background:linear-gradient(135deg,#1B4332 0%,#52796F 60%,#84A98C 100%);
+    background:linear-gradient(135deg,#1E3A8A 0%,#3B82F6 60%,#93C5FD 100%);
     border-radius:18px; padding:30px 38px; margin-bottom:22px;
     box-shadow:0 8px 32px rgba(27,67,50,0.22); position:relative; overflow:hidden;
 }
@@ -182,15 +182,15 @@ html,body,[class*="css"]{ font-family:'Inter',sans-serif !important; }
 }
 .metric-card::before{
     content:''; position:absolute; top:0; left:0; right:0; height:3px;
-    background:linear-gradient(90deg,#1B4332,#52796F); border-radius:14px 14px 0 0;
+    background:linear-gradient(90deg,#1E3A8A,#3B82F6); border-radius:14px 14px 0 0;
 }
 .metric-card:hover{ transform:translateY(-3px); box-shadow:0 6px 22px rgba(27,67,50,0.14); }
 .metric-icon-wrap{
     display:inline-flex; align-items:center; justify-content:center;
-    background:linear-gradient(135deg,#D1FAE5,#A7F3D0);
+    background:linear-gradient(135deg,#DBEAFE,#BFDBFE);
     border-radius:11px; width:42px; height:42px; margin:0 auto 9px;
 }
-.metric-value{ font-size:1.85rem; font-weight:700; color:#1B4332; line-height:1.1; }
+.metric-value{ font-size:1.85rem; font-weight:700; color:#1E3A8A; line-height:1.1; }
 .metric-label{ font-size:0.76rem; color:#718096; font-weight:500; margin-top:3px;
     text-transform:uppercase; letter-spacing:0.5px; }
 
@@ -200,14 +200,14 @@ html,body,[class*="css"]{ font-family:'Inter',sans-serif !important; }
     border-radius:20px; font-weight:700; font-size:0.81rem;
     box-shadow:0 2px 8px rgba(0,0,0,0.07);
 }
-.score-high  { background:linear-gradient(135deg,#D1FAE5,#A7F3D0); color:#065F46; border:1px solid #6EE7B7; }
+.score-high  { background:linear-gradient(135deg,#DBEAFE,#BFDBFE); color:#1D4ED8; border:1px solid #6EE7B7; }
 .score-medium{ background:linear-gradient(135deg,#FEF3C7,#FDE68A); color:#92400E; border:1px solid #FCD34D; }
 .score-low   { background:linear-gradient(135deg,#FEE2E2,#FECACA); color:#991B1B; border:1px solid #FCA5A5; }
 
 /* ── Section titre ── */
-.section-title{ font-size:1.18rem; font-weight:700; color:#1B4332;
+.section-title{ font-size:1.18rem; font-weight:700; color:#1E3A8A;
     margin-bottom:4px; display:flex; align-items:center; gap:10px; }
-.section-divider{ height:2px; background:linear-gradient(90deg,#52796F,transparent);
+.section-divider{ height:2px; background:linear-gradient(90deg,#3B82F6,transparent);
     border-radius:2px; margin:6px 0 18px; }
 
 /* ── Filtre ── */
@@ -224,7 +224,7 @@ html,body,[class*="css"]{ font-family:'Inter',sans-serif !important; }
     background:#EDE8E1; color:#2D3748; border-radius:7px; padding:3px 9px;
     font-size:0.79rem; font-weight:500; margin:2px 2px 2px 0;
     border:1px solid rgba(82,121,111,0.14); }
-.info-tag.good{ background:#D1FAE5; color:#065F46; border-color:#6EE7B7; }
+.info-tag.good{ background:#DBEAFE; color:#1D4ED8; border-color:#6EE7B7; }
 .info-tag.bad { background:#FEE2E2; color:#991B1B; border-color:#FCA5A5; }
 .info-tag.signal{ background:linear-gradient(135deg,#FEF3C7,#FDE68A); color:#92400E; border-color:#FCD34D; }
 
@@ -240,7 +240,7 @@ html,body,[class*="css"]{ font-family:'Inter',sans-serif !important; }
 .kanban-header{ background:linear-gradient(135deg,#EDE8E1,#F8F5F0);
     border-radius:10px; padding:10px 13px; margin-bottom:10px;
     border:1px solid rgba(82,121,111,0.14); }
-.kanban-header h4{ margin:0; color:#1B4332; font-size:0.84rem; font-weight:700;
+.kanban-header h4{ margin:0; color:#1E3A8A; font-size:0.84rem; font-weight:700;
     display:flex; align-items:center; gap:7px; }
 .kanban-count{ border-radius:8px; padding:2px 7px; font-size:0.74rem;
     font-weight:700; margin-left:auto; }
@@ -248,10 +248,10 @@ html,body,[class*="css"]{ font-family:'Inter',sans-serif !important; }
 /* ── Handoff card ── */
 .handoff-card{ background:#fff; border-radius:16px; padding:24px; margin-bottom:14px;
     box-shadow:0 4px 22px rgba(27,67,50,0.09); border:1px solid rgba(82,121,111,0.14);
-    border-top:4px solid #52796F; }
+    border-top:4px solid #3B82F6; }
 
 /* ── Impact card ── */
-.impact-card{ background:linear-gradient(135deg,#1B4332 0%,#52796F 100%);
+.impact-card{ background:linear-gradient(135deg,#1E3A8A 0%,#3B82F6 100%);
     border-radius:14px; padding:20px 16px; text-align:center; color:#fff;
     box-shadow:0 4px 18px rgba(27,67,50,0.22); }
 .impact-value{ font-size:1.75rem; font-weight:700; color:#F9E8A0; line-height:1; }
@@ -262,11 +262,11 @@ html,body,[class*="css"]{ font-family:'Inter',sans-serif !important; }
     font-size:0.87rem !important; padding:7px 16px !important;
     transition:all 0.2s !important; border:1.5px solid transparent !important; }
 .stButton > button[kind="primary"]{
-    background:linear-gradient(135deg,#1B4332,#52796F) !important;
+    background:linear-gradient(135deg,#1E3A8A,#3B82F6) !important;
     color:#fff !important; box-shadow:0 4px 12px rgba(27,67,50,0.28) !important; }
 .stButton > button[kind="primary"]:hover{ transform:translateY(-2px) !important; }
 .stButton > button[kind="secondary"]{
-    background:#fff !important; color:#1B4332 !important;
+    background:#fff !important; color:#1E3A8A !important;
     border-color:rgba(82,121,111,0.4) !important; }
 
 /* ── Misc ── */
@@ -276,10 +276,10 @@ html,body,[class*="css"]{ font-family:'Inter',sans-serif !important; }
 .stSelectbox > div > div{ border-radius:9px !important; }
 .streamlit-expanderHeader{ border-radius:9px !important; background:#EDE8E1 !important; font-weight:600 !important; }
 hr{ border-color:rgba(82,121,111,0.18) !important; margin:16px 0 !important; }
-.stProgress > div > div{ background:linear-gradient(90deg,#1B4332,#52796F) !important; border-radius:3px !important; }
+.stProgress > div > div{ background:linear-gradient(90deg,#1E3A8A,#3B82F6) !important; border-radius:3px !important; }
 ::-webkit-scrollbar{ width:5px; height:5px; }
 ::-webkit-scrollbar-track{ background:#EDE8E1; }
-::-webkit-scrollbar-thumb{ background:#84A98C; border-radius:3px; }
+::-webkit-scrollbar-thumb{ background:#93C5FD; border-radius:3px; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -289,7 +289,7 @@ hr{ border-color:rgba(82,121,111,0.18) !important; margin:16px 0 !important; }
 
 def badge_score(score):
     if score >= 75:
-        return f'<span class="score-badge score-high">{ic("flame",13,"#065F46")} {score}/100 — Haute priorite</span>'
+        return f'<span class="score-badge score-high">{ic("flame",13,"#1D4ED8")} {score}/100 — Haute priorite</span>'
     elif score >= 50:
         return f'<span class="score-badge score-medium">{ic("zap",13,"#92400E")} {score}/100 — Priorite moyenne</span>'
     else:
@@ -297,18 +297,18 @@ def badge_score(score):
 
 def badge_score_compact(score):
     if score >= 75:
-        return f'<span class="score-badge score-high">{ic("flame",12,"#065F46")} {score}/100</span>'
+        return f'<span class="score-badge score-high">{ic("flame",12,"#1D4ED8")} {score}/100</span>'
     elif score >= 50:
         return f'<span class="score-badge score-medium">{ic("zap",12,"#92400E")} {score}/100</span>'
     else:
         return f'<span class="score-badge score-low">{ic("snowflake",12,"#991B1B")} {score}/100</span>'
 
 STATUT_CONFIG = {
-    "Nouveau":              ("circle",       "#52796F"),
+    "Nouveau":              ("circle",       "#3B82F6"),
     "Score":                ("bar-chart",    "#D4A017"),
     "Contacte":             ("mail",         "#2B6CB0"),
     "Relance":              ("refresh-cw",   "#9C4221"),
-    "Converti":             ("check-circle", "#065F46"),
+    "Converti":             ("check-circle", "#1D4ED8"),
     "Non interesse":        ("x-circle",     "#991B1B"),
     "A relancer plus tard": ("timer",        "#6B46C1"),
     "Scor\u00e9":           ("bar-chart",    "#D4A017"),
@@ -327,10 +327,10 @@ def afficher_detail_score(entreprise):
     reasons = entreprise.get("score_reasons","")
     st.markdown(badge_score(score), unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
-    st.markdown(f'<span style="font-weight:600;color:#1B4332;display:flex;align-items:center;gap:6px;">{ic("layers",14,"#52796F")} Detail du score ICP</span>', unsafe_allow_html=True)
+    st.markdown(f'<span style="font-weight:600;color:#1E3A8A;display:flex;align-items:center;gap:6px;">{ic("layers",14,"#3B82F6")} Detail du score ICP</span>', unsafe_allow_html=True)
     if reasons:
         for r in reasons.split(" | "):
-            st.markdown(f'<div style="display:flex;align-items:flex-start;gap:6px;margin:3px 0;font-size:0.84rem;color:#2D3748;">{ic("check",12,"#52796F")} {r}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div style="display:flex;align-items:flex-start;gap:6px;margin:3px 0;font-size:0.84rem;color:#2D3748;">{ic("check",12,"#3B82F6")} {r}</div>', unsafe_allow_html=True)
     st.progress(score / 100)
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -552,7 +552,7 @@ with st.sidebar:
                 <div style="font-size:0.62rem;color:rgba(255,255,255,0.52);text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">Prospects</div>
             </div>
             <div style="background:rgba(255,255,255,0.1);border-radius:9px;padding:9px 6px;text-align:center;">
-                <div style="font-size:1.4rem;font-weight:700;color:#A7F3D0;line-height:1;">{stats['convertis']}</div>
+                <div style="font-size:1.4rem;font-weight:700;color:#BFDBFE;line-height:1;">{stats['convertis']}</div>
                 <div style="font-size:0.62rem;color:rgba(255,255,255,0.52);text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">Convertis</div>
             </div>
         </div>
@@ -615,7 +615,7 @@ with st.sidebar:
     st.markdown('<div style="border-top:1px solid rgba(255,255,255,0.11);margin:8px 0;"></div>', unsafe_allow_html=True)
 
     groq_ok   = groq_disponible()
-    dot_color = "#A7F3D0" if groq_ok else "#FCD34D"
+    dot_color = "#BFDBFE" if groq_ok else "#FCD34D"
     st.markdown(f"""
     <div style="padding:5px 12px;font-size:0.74rem;color:rgba(255,255,255,0.62);display:flex;align-items:center;gap:7px;">
         <div style="width:6px;height:6px;background:{dot_color};border-radius:50%;box-shadow:0 0 5px {dot_color};flex-shrink:0;"></div>
@@ -634,11 +634,11 @@ with st.sidebar:
     st.markdown('<div style="border-top:1px solid rgba(255,255,255,0.11);margin:8px 0;"></div>', unsafe_allow_html=True)
     c1, c2 = st.columns(2)
     with c1:
-        if st.button("🔴 Paramètres", use_container_width=True):
+        if st.button("Paramètres", icon=":material/settings:", use_container_width=True):
             st.session_state["page_active"] = "settings"
             st.rerun()
     with c2:
-        if st.button("🟡 Réinit.", use_container_width=True):
+        if st.button("Réinit.", icon=":material/refresh:", use_container_width=True):
             reset_database()
             st.rerun()
 
@@ -695,33 +695,33 @@ if not groq_disponible():
 if page == "dashboard":
     m1,m2,m3,m4 = st.columns(4)
     with m1:
-        st.markdown(f'<div class="metric-card"><div class="metric-icon-wrap">{ic("building",20,"#1B4332")}</div><div class="metric-value">{stats["total"]}</div><div class="metric-label">Prospects</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="metric-card"><div class="metric-icon-wrap">{ic("building",20,"#1E3A8A")}</div><div class="metric-value">{stats["total"]}</div><div class="metric-label">Prospects</div></div>', unsafe_allow_html=True)
     with m2:
-        st.markdown(f'<div class="metric-card"><div class="metric-icon-wrap" style="background:linear-gradient(135deg,#FEF3C7,#FDE68A);">{ic("flame",20,"#065F46")}</div><div class="metric-value">{stats["haute_priorite"]}</div><div class="metric-label">Haute priorite</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="metric-card"><div class="metric-icon-wrap" style="background:linear-gradient(135deg,#FEF3C7,#FDE68A);">{ic("flame",20,"#1D4ED8")}</div><div class="metric-value">{stats["haute_priorite"]}</div><div class="metric-label">Haute priorite</div></div>', unsafe_allow_html=True)
     with m3:
-        st.markdown(f'<div class="metric-card"><div class="metric-icon-wrap">{ic("check-circle",20,"#065F46")}</div><div class="metric-value">{stats["convertis"]}</div><div class="metric-label">Convertis</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="metric-card"><div class="metric-icon-wrap">{ic("check-circle",20,"#1D4ED8")}</div><div class="metric-value">{stats["convertis"]}</div><div class="metric-label">Convertis</div></div>', unsafe_allow_html=True)
     with m4:
-        st.markdown(f'<div class="metric-card"><div class="metric-icon-wrap">{ic("percent",20,"#1B4332")}</div><div class="metric-value">{stats["taux_conversion"]}%</div><div class="metric-label">Taux conversion</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="metric-card"><div class="metric-icon-wrap">{ic("percent",20,"#1E3A8A")}</div><div class="metric-value">{stats["taux_conversion"]}%</div><div class="metric-label">Taux conversion</div></div>', unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
     col_l, col_r = st.columns([3,2])
 
     with col_l:
-        st.markdown(f'<div class="section-title">{ic("bar-chart",17,"#1B4332")} Repartition par statut</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="section-title">{ic("bar-chart",17,"#1E3A8A")} Repartition par statut</div>', unsafe_allow_html=True)
         st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
         if stats["par_statut"]:
             df_s = pd.DataFrame([(s,n) for s,n in stats["par_statut"].items()], columns=["Statut","Nombre"]).sort_values("Nombre",ascending=False)
             st.dataframe(df_s, use_container_width=True, hide_index=True)
 
     with col_r:
-        st.markdown(f'<div class="section-title">{ic("activity",17,"#1B4332")} Impact mesure</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="section-title">{ic("activity",17,"#1E3A8A")} Impact mesure</div>', unsafe_allow_html=True)
         st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
         st.markdown('<div class="impact-card" style="background:linear-gradient(135deg,#4A5568,#718096);margin-bottom:8px;"><div class="impact-value">Plusieurs heures/jour</div><div class="impact-label">Avant CibleNet</div></div>', unsafe_allow_html=True)
         st.markdown('<div class="impact-card" style="margin-bottom:8px;"><div class="impact-value">15 min/jour</div><div class="impact-label">Avec CibleNet</div></div>', unsafe_allow_html=True)
         st.markdown('<div class="impact-card" style="background:linear-gradient(135deg,#92400E,#D97706);"><div class="impact-value">94 %</div><div class="impact-label">Gain productivite</div></div>', unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
-    st.markdown(f'<div class="section-title">{ic("flame",17,"#1B4332")} Top 5 haute priorite</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{ic("flame",17,"#1E3A8A")} Top 5 haute priorite</div>', unsafe_allow_html=True)
     st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
     top5 = [e for e in get_all_entreprises() if e["score"] >= 75][:5]
     if top5:
@@ -731,7 +731,7 @@ if page == "dashboard":
 
     # ── Graphiques Altair Ultra-Modernes ──
     st.markdown("<br><br>", unsafe_allow_html=True)
-    st.markdown(f'<div class="section-title">{ic("bar-chart",17,"#1B4332")} Analyse du Pipeline</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{ic("bar-chart",17,"#1E3A8A")} Analyse du Pipeline</div>', unsafe_allow_html=True)
     st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
     all_prospects = get_all_entreprises()
@@ -741,7 +741,7 @@ if page == "dashboard":
         ca1, ca2 = st.columns(2)
         
         with ca1:
-            st.markdown("<div style='font-weight:700;color:#1B4332;margin-bottom:12px;font-size:0.95rem;'>Distribution des Scores ICP</div>", unsafe_allow_html=True)
+            st.markdown("<div style='font-weight:700;color:#1E3A8A;margin-bottom:12px;font-size:0.95rem;'>Distribution des Scores ICP</div>", unsafe_allow_html=True)
             # Area chart with gradient for scores
             base_area = alt.Chart(df_all).transform_density(
                 'score',
@@ -750,10 +750,10 @@ if page == "dashboard":
             )
             
             area = base_area.mark_area(
-                line={'color':'#1B4332', 'size': 3},
+                line={'color':'#1E3A8A', 'size': 3},
                 color=alt.Gradient(
                     gradient='linear',
-                    stops=[alt.GradientStop(color='#52796F', offset=0),
+                    stops=[alt.GradientStop(color='#3B82F6', offset=0),
                            alt.GradientStop(color='rgba(82,121,111,0.05)', offset=1)],
                     x1=1, x2=1, y1=1, y2=0
                 )
@@ -767,7 +767,7 @@ if page == "dashboard":
             st.altair_chart(chart_area, use_container_width=True)
 
         with ca2:
-            st.markdown("<div style='font-weight:700;color:#1B4332;margin-bottom:12px;font-size:0.95rem;'>Répartition du Pipeline (Statuts)</div>", unsafe_allow_html=True)
+            st.markdown("<div style='font-weight:700;color:#1E3A8A;margin-bottom:12px;font-size:0.95rem;'>Répartition du Pipeline (Statuts)</div>", unsafe_allow_html=True)
             df_statut = pd.DataFrame([(s, n) for s, n in stats["par_statut"].items()], columns=["Statut", "Nombre"])
             chart_donut = alt.Chart(df_statut).mark_arc(innerRadius=65, cornerRadius=5).encode(
                 theta=alt.Theta(field="Nombre", type="quantitative"),
@@ -779,14 +779,14 @@ if page == "dashboard":
             st.altair_chart(chart_donut, use_container_width=True)
 
         st.markdown("<br>", unsafe_allow_html=True)
-        st.markdown("<div style='font-weight:700;color:#1B4332;margin-bottom:12px;font-size:0.95rem;'>Top Secteurs par Priorité (Score moyen)</div>", unsafe_allow_html=True)
+        st.markdown("<div style='font-weight:700;color:#1E3A8A;margin-bottom:12px;font-size:0.95rem;'>Top Secteurs par Priorité (Score moyen)</div>", unsafe_allow_html=True)
         df_sec = df_all.groupby('secteur').agg({'score':'mean', 'id':'count'}).reset_index().rename(columns={'id':'Nombre de prospects', 'score':'Score moyen'})
         df_sec = df_sec.sort_values('Score moyen', ascending=False).head(8)
         
         chart_bar = alt.Chart(df_sec).mark_bar(cornerRadiusEnd=6, height=22).encode(
             x=alt.X('Score moyen:Q', title='Score moyen ICP', scale=alt.Scale(domain=[0, 100])),
             y=alt.Y('secteur:N', sort='-x', title='', axis=alt.Axis(labelFontSize=12, labelColor='#2D3748')),
-            color=alt.Color('Score moyen:Q', scale=alt.Scale(range=['#84A98C', '#1B4332']), legend=None),
+            color=alt.Color('Score moyen:Q', scale=alt.Scale(range=['#93C5FD', '#1E3A8A']), legend=None),
             tooltip=['secteur', alt.Tooltip('Score moyen:Q', format='.1f'), 'Nombre de prospects']
         ).properties(height=280).configure_view(strokeWidth=0).configure_axis(grid=False, domainWidth=1.5, domainColor='#EDE8E1')
         st.altair_chart(chart_bar, use_container_width=True)
@@ -795,7 +795,7 @@ if page == "dashboard":
         ca3, ca4 = st.columns(2)
         
         with ca3:
-            st.markdown("<div style='font-weight:700;color:#1B4332;margin-bottom:12px;font-size:0.95rem;'>Répartition Géographique</div>", unsafe_allow_html=True)
+            st.markdown("<div style='font-weight:700;color:#1E3A8A;margin-bottom:12px;font-size:0.95rem;'>Répartition Géographique</div>", unsafe_allow_html=True)
             df_loc = df_all.groupby('localisation').size().reset_index(name='Nombre')
             df_loc = df_loc.sort_values('Nombre', ascending=False).head(10)
             
@@ -808,7 +808,7 @@ if page == "dashboard":
             st.altair_chart(chart_loc, use_container_width=True)
 
         with ca4:
-            st.markdown("<div style='font-weight:700;color:#1B4332;margin-bottom:12px;font-size:0.95rem;'>Taille (Effectif) vs Score ICP</div>", unsafe_allow_html=True)
+            st.markdown("<div style='font-weight:700;color:#1E3A8A;margin-bottom:12px;font-size:0.95rem;'>Taille (Effectif) vs Score ICP</div>", unsafe_allow_html=True)
             chart_scatter = alt.Chart(df_all).mark_circle(size=80, opacity=0.7).encode(
                 x=alt.X('effectif:Q', title='Effectif (Salariés)', scale=alt.Scale(type='symlog')),
                 y=alt.Y('score:Q', title='Score ICP', scale=alt.Scale(domain=[0, 100])),
@@ -856,7 +856,7 @@ elif page == "scoring":
         if rows:
             e = resultats[rows[0]]
             st.markdown("<br>", unsafe_allow_html=True)
-            st.markdown(f'<div class="section-title">{ic("target",18,"#1B4332")} Fiche — {e["nom"]}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="section-title">{ic("target",18,"#1E3A8A")} Fiche — {e["nom"]}</div>', unsafe_allow_html=True)
             st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
             d1,d2 = st.columns(2)
             with d1:
@@ -895,13 +895,13 @@ elif page == "pipeline":
     pipeline = get_pipeline()
     STAT_ACT  = ["Nouveau","Scor\u00e9","Contact\u00e9","Relanc\u00e9"]
     STAT_FERM = ["Converti","Non int\u00e9ress\u00e9","\u00c0 relancer plus tard"]
-    COULEURS  = {"Nouveau":"#52796F","Scor\u00e9":"#D4A017","Contact\u00e9":"#2B6CB0","Relanc\u00e9":"#9C4221"}
+    COULEURS  = {"Nouveau":"#3B82F6","Scor\u00e9":"#D4A017","Contact\u00e9":"#2B6CB0","Relanc\u00e9":"#9C4221"}
 
     kcols = st.columns(len(STAT_ACT))
     for col, statut in zip(kcols, STAT_ACT):
         with col:
             pros = pipeline.get(statut,[])
-            clr  = COULEURS.get(statut,"#52796F")
+            clr  = COULEURS.get(statut,"#3B82F6")
             cfg  = STATUT_CONFIG.get(statut,("circle",clr))
             st.markdown(f'<div class="kanban-header" style="border-left:4px solid {clr};"><h4>{ic(cfg[0],13,clr)} {statut}<span class="kanban-count" style="background:{clr}18;color:{clr};">{len(pros)}</span></h4></div>', unsafe_allow_html=True)
             for p in pros:
@@ -934,7 +934,7 @@ elif page == "pipeline":
         if not entreprise:
             st.error("Prospect introuvable.")
         else:
-            st.markdown(f'<div class="section-title">{ic("briefcase",18,"#1B4332")} Actions — {entreprise["nom"]}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="section-title">{ic("briefcase",18,"#1E3A8A")} Actions — {entreprise["nom"]}</div>', unsafe_allow_html=True)
             st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
             p1,p2 = st.columns(2)
             with p1:
@@ -945,7 +945,7 @@ elif page == "pipeline":
                     st.markdown(f'<div style="font-size:0.8rem;color:#718096;margin-top:5px;">{ic("clock",11,"#718096")} Contact : {entreprise["date_contact"]}</div>', unsafe_allow_html=True)
                 st.markdown('</div>', unsafe_allow_html=True)
             with p2:
-                st.markdown(f'<div class="detail-card"><div style="font-weight:700;font-size:0.88rem;color:#1B4332;margin-bottom:13px;">{ic("zap",15,"#52796F")} Actions disponibles</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="detail-card"><div style="font-weight:700;font-size:0.88rem;color:#1E3A8A;margin-bottom:13px;">{ic("zap",15,"#3B82F6")} Actions disponibles</div>', unsafe_allow_html=True)
 
                 if st.button("Generer un message de contact", use_container_width=True, key="btn_gen", type="primary"):
                     with st.spinner("Generation en cours..."):
@@ -1003,7 +1003,7 @@ elif page == "pipeline":
             msg_aff = st.session_state.get("message_affiche") or entreprise.get("message_genere")
             if msg_aff:
                 st.markdown("<br>", unsafe_allow_html=True)
-                st.markdown(f'<div style="font-weight:600;font-size:0.88rem;color:#1B4332;margin-bottom:4px;">{ic("edit",14,"#52796F")} Message — modifiable avant envoi</div>', unsafe_allow_html=True)
+                st.markdown(f'<div style="font-weight:600;font-size:0.88rem;color:#1E3A8A;margin-bottom:4px;">{ic("edit",14,"#3B82F6")} Message — modifiable avant envoi</div>', unsafe_allow_html=True)
                 mk = f"msg_edit_{actif_id}"
                 if mk not in st.session_state: st.session_state[mk] = msg_aff
                 msg_ed = st.text_area("", value=st.session_state[mk], height=140, key=mk, label_visibility="collapsed")
@@ -1017,8 +1017,8 @@ elif page == "pipeline":
                             st.rerun()
                 with sc2:
                     nb = len(msg_ed.split())
-                    col = "#065F46" if nb<=100 else "#C53030"
-                    st.markdown(f'<div style="font-size:0.77rem;color:{col};margin-top:7px;display:flex;align-items:center;gap:4px;">{nb} mot(s) {ic("check-circle",11,"#065F46") if nb<=100 else ic("alert-triangle",11,"#C53030")}</div>', unsafe_allow_html=True)
+                    col = "#1D4ED8" if nb<=100 else "#C53030"
+                    st.markdown(f'<div style="font-size:0.77rem;color:{col};margin-top:7px;display:flex;align-items:center;gap:4px;">{nb} mot(s) {ic("check-circle",11,"#1D4ED8") if nb<=100 else ic("alert-triangle",11,"#C53030")}</div>', unsafe_allow_html=True)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # PAGE : MESSAGES & RELANCES
@@ -1046,12 +1046,12 @@ elif page == "messages":
     if not convertis:
         st.markdown(f'<div class="empty-state"><div class="empty-state-icon">{icon("handshake",26,"#718096")}</div><div class="empty-state-text">Aucun prospect converti</div><div class="empty-state-sub">Convertissez un prospect dans le Pipeline pour le transmettre ici.</div></div>', unsafe_allow_html=True)
     else:
-        st.markdown(f'<div style="display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#D1FAE5,#A7F3D0);color:#065F46;border-radius:10px;padding:9px 14px;font-weight:700;margin-bottom:18px;border:1px solid #6EE7B7;font-size:0.88rem;">{ic("check-circle",14,"#065F46")} {len(convertis)} prospect(s) converti(s)</div>', unsafe_allow_html=True)
+        st.markdown(f'<div style="display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#DBEAFE,#BFDBFE);color:#1D4ED8;border-radius:10px;padding:9px 14px;font-weight:700;margin-bottom:18px;border:1px solid #6EE7B7;font-size:0.88rem;">{ic("check-circle",14,"#1D4ED8")} {len(convertis)} prospect(s) converti(s)</div>', unsafe_allow_html=True)
         for e in convertis:
             st.markdown('<div class="handoff-card">', unsafe_allow_html=True)
             h1,h2 = st.columns([3,1])
             with h1:
-                st.markdown(f'<div style="font-size:1.05rem;font-weight:700;color:#1B4332;margin-bottom:7px;">{ic("building",15,"#52796F")} {e["nom"]}</div>', unsafe_allow_html=True)
+                st.markdown(f'<div style="font-size:1.05rem;font-weight:700;color:#1E3A8A;margin-bottom:7px;">{ic("building",15,"#3B82F6")} {e["nom"]}</div>', unsafe_allow_html=True)
                 st.markdown(badge_score(e["score"]), unsafe_allow_html=True)
                 st.markdown("<br>", unsafe_allow_html=True)
                 cc1,cc2,cc3 = st.columns(3)
@@ -1094,7 +1094,7 @@ elif page == "messages":
 elif page == "import":
     col_main, col_info = st.columns([3,2])
     with col_main:
-        st.markdown(f'<div class="section-title">{ic("download",16,"#1B4332")} Template Excel</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="section-title">{ic("download",16,"#1E3A8A")} Template Excel</div>', unsafe_allow_html=True)
         st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
         st.markdown('<div style="font-size:0.86rem;color:#718096;margin-bottom:10px;">Telechargez le template, remplissez-le et importez-le.</div>', unsafe_allow_html=True)
         st.download_button(
@@ -1105,14 +1105,14 @@ elif page == "import":
             use_container_width=True,
         )
         st.markdown("<br>", unsafe_allow_html=True)
-        st.markdown(f'<div class="section-title">{ic("upload",16,"#1B4332")} Importer un fichier</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="section-title">{ic("upload",16,"#1E3A8A")} Importer un fichier</div>', unsafe_allow_html=True)
         st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
         fichier = st.file_uploader("Glissez votre fichier Excel ici (.xlsx)", type=["xlsx"])
         if fichier:
-            st.markdown(f'<div style="font-size:0.84rem;color:#718096;margin-bottom:7px;">{ic("table",13,"#065F46")} Fichier detecte : <strong>{fichier.name}</strong></div>', unsafe_allow_html=True)
+            st.markdown(f'<div style="font-size:0.84rem;color:#718096;margin-bottom:7px;">{ic("table",13,"#1D4ED8")} Fichier detecte : <strong>{fichier.name}</strong></div>', unsafe_allow_html=True)
             try:
                 dfp = pd.read_excel(fichier, engine="openpyxl", nrows=5)
-                st.markdown(f'<div style="font-size:0.81rem;font-weight:600;color:#1B4332;margin-bottom:5px;">{ic("table",12,"#52796F")} Apercu (5 premieres lignes)</div>', unsafe_allow_html=True)
+                st.markdown(f'<div style="font-size:0.81rem;font-weight:600;color:#1E3A8A;margin-bottom:5px;">{ic("table",12,"#3B82F6")} Apercu (5 premieres lignes)</div>', unsafe_allow_html=True)
                 st.dataframe(dfp, use_container_width=True, hide_index=True)
                 fichier.seek(0)
             except Exception as e:
@@ -1129,7 +1129,7 @@ elif page == "import":
                     with st.expander(f"Rapport imputation — {len(raps)} colonne(s) traitee(s)"):
                         st.markdown(f'<div style="font-size:0.81rem;color:#92400E;margin-bottom:7px;">{ic("info",12,"#D97706")} Valeurs manquantes comblee automatiquement (mediane pour nombres, mode/defaut pour texte).</div>', unsafe_allow_html=True)
                         for r in raps:
-                            st.markdown(f'<div style="font-size:0.81rem;color:#2D3748;padding:3px 0;border-bottom:1px solid rgba(82,121,111,0.1);">{ic("check",11,"#52796F")} {r}</div>', unsafe_allow_html=True)
+                            st.markdown(f'<div style="font-size:0.81rem;color:#2D3748;padding:3px 0;border-bottom:1px solid rgba(82,121,111,0.1);">{ic("check",11,"#3B82F6")} {r}</div>', unsafe_allow_html=True)
                 if errs:
                     st.warning("Erreurs :")
                     for err in errs: st.markdown(f"- {err}")
@@ -1137,7 +1137,7 @@ elif page == "import":
                     st.warning("Aucun nouveau prospect importe.")
 
     with col_info:
-        st.markdown(f'<div class="section-title">{ic("info",16,"#1B4332")} Colonnes acceptees</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="section-title">{ic("info",16,"#1E3A8A")} Colonnes acceptees</div>', unsafe_allow_html=True)
         st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
         colonnes_doc = [
             ("nom / name / entreprise / company",        "Obligatoire", "Nom de l'entreprise"),
@@ -1150,11 +1150,11 @@ elif page == "import":
         ]
         for cn, st_col, desc in colonnes_doc:
             obl = st_col == "Obligatoire"
-            couleur = "#065F46" if obl else "#718096"
-            ico_s = ic("check-circle",11,"#065F46") if obl else ic("circle",10,"#CBD5E0")
+            couleur = "#1D4ED8" if obl else "#718096"
+            ico_s = ic("check-circle",11,"#1D4ED8") if obl else ic("circle",10,"#CBD5E0")
             st.markdown(f"""
             <div style="display:flex;align-items:flex-start;gap:7px;padding:7px 0;border-bottom:1px solid rgba(82,121,111,0.09);">
-                <code style="background:#F0FFF4;color:#065F46;padding:2px 7px;border-radius:5px;font-size:0.77rem;flex-shrink:0;">{cn}</code>
+                <code style="background:#F0FFF4;color:#1D4ED8;padding:2px 7px;border-radius:5px;font-size:0.77rem;flex-shrink:0;">{cn}</code>
                 <div>
                     <div style="font-size:0.76rem;color:{couleur};font-weight:600;display:flex;align-items:center;gap:3px;">{ico_s} {st_col}</div>
                     <div style="font-size:0.78rem;color:#718096;">{desc}</div>
@@ -1175,7 +1175,7 @@ elif page == "export":
         col_opt, col_prev = st.columns([2,3])
         with col_opt:
             st.markdown('<div class="filter-section">', unsafe_allow_html=True)
-            st.markdown(f'<div style="font-weight:600;font-size:0.88rem;color:#1B4332;margin-bottom:11px;">{ic("settings",14,"#52796F")} Options export</div>', unsafe_allow_html=True)
+            st.markdown(f'<div style="font-weight:600;font-size:0.88rem;color:#1E3A8A;margin-bottom:11px;">{ic("settings",14,"#3B82F6")} Options export</div>', unsafe_allow_html=True)
             filtre_statut  = st.multiselect("Filtrer par statut", list(STATUT_CONFIG.keys()), default=[])
             filtre_score   = st.slider("Score minimum", 0, 100, 0, step=5)
             incl_msg       = st.checkbox("Inclure les messages generes", value=True)
@@ -1199,7 +1199,7 @@ elif page == "export":
             else:
                 st.warning("Aucun prospect avec ces filtres.")
         with col_prev:
-            st.markdown(f'<div style="font-weight:600;font-size:0.88rem;color:#1B4332;margin-bottom:9px;">{ic("table",14,"#52796F")} Apercu</div>', unsafe_allow_html=True)
+            st.markdown(f'<div style="font-weight:600;font-size:0.88rem;color:#1E3A8A;margin-bottom:9px;">{ic("table",14,"#3B82F6")} Apercu</div>', unsafe_allow_html=True)
             if data_exp:
                 dfv = pd.DataFrame(data_exp)[["nom","secteur","localisation","effectif","score","statut"]]
                 dfv.columns = ["Entreprise","Secteur","Ville","Effectif","Score ICP","Statut"]
@@ -1221,7 +1221,7 @@ elif page == "scraping":
         col_f, col_r = st.columns([2,3])
         with col_f:
             st.markdown('<div class="filter-section">', unsafe_allow_html=True)
-            st.markdown(f'<div style="font-weight:600;font-size:0.88rem;color:#1B4332;margin-bottom:12px;">{ic("settings",14,"#52796F")} Parametres</div>', unsafe_allow_html=True)
+            st.markdown(f'<div style="font-weight:600;font-size:0.88rem;color:#1E3A8A;margin-bottom:12px;">{ic("settings",14,"#3B82F6")} Parametres</div>', unsafe_allow_html=True)
             sec_scrap  = st.text_input("Secteur / mot-cle", placeholder="ex: banque, logistique...")
             vil_scrap  = st.selectbox("Ville cible", ["Lome","Kara","Tsevie","Kpalime","Toutes"])
             src_scrap  = st.multiselect("Sources", ["yellotogo","togo_annuaire"], default=["yellotogo","togo_annuaire"])
@@ -1231,9 +1231,9 @@ elif page == "scraping":
             st.markdown("<br>", unsafe_allow_html=True)
             st.markdown(f"""
             <div style="background:#fff;border-radius:11px;padding:14px;border:1px solid rgba(82,121,111,0.14);">
-                <div style="font-weight:600;color:#1B4332;font-size:0.84rem;margin-bottom:9px;">{ic("globe",13,"#52796F")} Sources disponibles</div>
-                <div style="font-size:0.8rem;color:#2D3748;margin-bottom:6px;">{ic("check-circle",11,"#065F46")} <strong>yellotogo.com</strong><br><span style="color:#718096;padding-left:18px;">Annuaire entreprises togolaises</span></div>
-                <div style="font-size:0.8rem;color:#2D3748;">{ic("check-circle",11,"#065F46")} <strong>togo-annuaire.com</strong><br><span style="color:#718096;padding-left:18px;">Repertoire professionnel Togo</span></div>
+                <div style="font-weight:600;color:#1E3A8A;font-size:0.84rem;margin-bottom:9px;">{ic("globe",13,"#3B82F6")} Sources disponibles</div>
+                <div style="font-size:0.8rem;color:#2D3748;margin-bottom:6px;">{ic("check-circle",11,"#1D4ED8")} <strong>yellotogo.com</strong><br><span style="color:#718096;padding-left:18px;">Annuaire entreprises togolaises</span></div>
+                <div style="font-size:0.8rem;color:#2D3748;">{ic("check-circle",11,"#1D4ED8")} <strong>togo-annuaire.com</strong><br><span style="color:#718096;padding-left:18px;">Repertoire professionnel Togo</span></div>
             </div>
             """, unsafe_allow_html=True)
 
@@ -1245,7 +1245,7 @@ elif page == "scraping":
                     logs, log_zone = [], st.empty()
                     def cb(msg):
                         logs.append(msg)
-                        log_zone.markdown("".join(f'<div style="background:#fff;border-radius:9px;padding:10px 14px;border-left:4px solid #52796F;box-shadow:0 2px 10px rgba(27,67,50,0.05);margin-bottom:6px;font-size:0.85rem;">{m}</div>' for m in logs), unsafe_allow_html=True)
+                        log_zone.markdown("".join(f'<div style="background:#fff;border-radius:9px;padding:10px 14px;border-left:4px solid #3B82F6;box-shadow:0 2px 10px rgba(27,67,50,0.05);margin-bottom:6px;font-size:0.85rem;">{m}</div>' for m in logs), unsafe_allow_html=True)
                     vp = "" if vil_scrap=="Toutes" else vil_scrap
                     with st.spinner("Scraping en cours..."):
                         res_sc = scraper_prospects(secteur=sec_scrap, ville=vp, sources=src_scrap, max_pages=nb_pages, callback=cb)
@@ -1254,7 +1254,7 @@ elif page == "scraping":
             res_sc = st.session_state.get("res_scraping",[])
             if res_sc:
                 h = sum(1 for r in res_sc if r["score"]>=75)
-                st.markdown(f'<div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;"><div style="background:#D1FAE5;color:#065F46;border-radius:9px;padding:9px 14px;font-weight:700;font-size:0.87rem;border:1px solid #6EE7B7;">{ic("database",13,"#065F46")} {len(res_sc)} prospect(s)</div><div style="background:#FEF3C7;color:#92400E;border-radius:9px;padding:9px 14px;font-weight:700;font-size:0.87rem;border:1px solid #FCD34D;">{ic("flame",13,"#92400E")} {h} haute priorite</div></div>', unsafe_allow_html=True)
+                st.markdown(f'<div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;"><div style="background:#DBEAFE;color:#1D4ED8;border-radius:9px;padding:9px 14px;font-weight:700;font-size:0.87rem;border:1px solid #6EE7B7;">{ic("database",13,"#1D4ED8")} {len(res_sc)} prospect(s)</div><div style="background:#FEF3C7;color:#92400E;border-radius:9px;padding:9px 14px;font-weight:700;font-size:0.87rem;border:1px solid #FCD34D;">{ic("flame",13,"#92400E")} {h} haute priorite</div></div>', unsafe_allow_html=True)
                 dfs = pd.DataFrame(res_sc)[["nom","secteur","localisation","effectif","score","statut"]]
                 dfs.columns = ["Entreprise","Secteur","Ville","Effectif","Score ICP","Statut"]
                 st.dataframe(dfs, use_container_width=True, hide_index=True)
@@ -1306,16 +1306,16 @@ elif page == "linkedin":
     """, unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
-    st.markdown(f'<div class="section-title">{ic("check-circle",17,"#1B4332")} Alternatives recommandees</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{ic("check-circle",17,"#1E3A8A")} Alternatives recommandees</div>', unsafe_allow_html=True)
     st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
     a1,a2,a3 = st.columns(3)
     with a1:
-        st.markdown(f'<div class="detail-card" style="text-align:center;"><div style="margin:0 auto 10px;width:42px;height:42px;background:linear-gradient(135deg,#D1FAE5,#A7F3D0);border-radius:10px;display:flex;align-items:center;justify-content:center;">{icon("upload",20,"#065F46")}</div><div style="font-weight:700;color:#1B4332;margin-bottom:5px;">Import Excel</div><div style="font-size:0.82rem;color:#718096;">Exportez vos contacts LinkedIn manuellement et importez-les via notre outil.</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="detail-card" style="text-align:center;"><div style="margin:0 auto 10px;width:42px;height:42px;background:linear-gradient(135deg,#DBEAFE,#BFDBFE);border-radius:10px;display:flex;align-items:center;justify-content:center;">{icon("upload",20,"#1D4ED8")}</div><div style="font-weight:700;color:#1E3A8A;margin-bottom:5px;">Import Excel</div><div style="font-size:0.82rem;color:#718096;">Exportez vos contacts LinkedIn manuellement et importez-les via notre outil.</div></div>', unsafe_allow_html=True)
     with a2:
-        st.markdown(f'<div class="detail-card" style="text-align:center;"><div style="margin:0 auto 10px;width:42px;height:42px;background:linear-gradient(135deg,#D1FAE5,#A7F3D0);border-radius:10px;display:flex;align-items:center;justify-content:center;">{icon("globe",20,"#065F46")}</div><div style="font-weight:700;color:#1B4332;margin-bottom:5px;">Scraping Annuaires</div><div style="font-size:0.82rem;color:#718096;">Annuaires togolais legaux, rapides et adaptes au marche local.</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="detail-card" style="text-align:center;"><div style="margin:0 auto 10px;width:42px;height:42px;background:linear-gradient(135deg,#DBEAFE,#BFDBFE);border-radius:10px;display:flex;align-items:center;justify-content:center;">{icon("globe",20,"#1D4ED8")}</div><div style="font-weight:700;color:#1E3A8A;margin-bottom:5px;">Scraping Annuaires</div><div style="font-size:0.82rem;color:#718096;">Annuaires togolais legaux, rapides et adaptes au marche local.</div></div>', unsafe_allow_html=True)
     with a3:
-        st.markdown(f'<div class="detail-card" style="text-align:center;"><div style="margin:0 auto 10px;width:42px;height:42px;background:linear-gradient(135deg,#DBEAFE,#BFDBFE);border-radius:10px;display:flex;align-items:center;justify-content:center;">{icon("briefcase",20,"#1D4ED8")}</div><div style="font-weight:700;color:#1B4332;margin-bottom:5px;">PhantomBuster</div><div style="font-size:0.82rem;color:#718096;">Outil SaaS (~50$/mois) automatisant LinkedIn legalement.</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="detail-card" style="text-align:center;"><div style="margin:0 auto 10px;width:42px;height:42px;background:linear-gradient(135deg,#DBEAFE,#BFDBFE);border-radius:10px;display:flex;align-items:center;justify-content:center;">{icon("briefcase",20,"#1D4ED8")}</div><div style="font-weight:700;color:#1E3A8A;margin-bottom:5px;">PhantomBuster</div><div style="font-size:0.82rem;color:#718096;">Outil SaaS (~50$/mois) automatisant LinkedIn legalement.</div></div>', unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
     if st.button("Aller vers Import Excel", type="primary"):
@@ -1326,7 +1326,7 @@ elif page == "linkedin":
 # PAGE : PARAMÈTRES (SETTINGS)
 # ─────────────────────────────────────────────────────────────────────────────
 elif page == "settings":
-    st.markdown(f'<div class="section-title">{ic("settings",17,"#1B4332")} Configuration CibleNet</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-title">{ic("settings",17,"#1E3A8A")} Configuration CibleNet</div>', unsafe_allow_html=True)
     st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
     
     settings = get_settings()
